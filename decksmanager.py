@@ -1,7 +1,11 @@
 import sys
 import json
+import os
+import shutil
 
-from PySide6 import QtWidgets
+from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication
+from PySide6.QtCore import QUrl
+from PySide6.QtGui import QDesktopServices
 import ui_decksmanager
 
 
@@ -9,7 +13,8 @@ from scr.cards import CardsSet
 from scr.screenshot import ScreenShotsWin
 from scr.importingame import AutoImport
 from scr.paddleocr import Ocr
-class CardsManager(QtWidgets.QMainWindow):
+
+class CardsManager(QMainWindow):
     def __init__(self):
         super().__init__()
         self.cards = CardsSet()
@@ -17,6 +22,9 @@ class CardsManager(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
         #初始化数据
         self.init_data()
+        #-------菜单--------------
+        self.ui.action_info.triggered.connect(lambda: QMessageBox.information(None, "Info", "This is an information message"))
+        self.ui.actionGithub.triggered.connect(lambda: QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager")))
         #选择卡组
         self.ui.listWidget_cardSet.itemSelectionChanged.connect(self.update_listWidget_cards)
         #添加卡组
@@ -85,7 +93,7 @@ class CardsManager(QtWidgets.QMainWindow):
     def add_card(self):
         try:
             currentCardSet = self.ui.listWidget_cardSet.currentItem().text()
-            cardName,ok = QtWidgets.QInputDialog.getText(self,"输入卡牌名字","输入卡牌名字")
+            cardName,ok = QInputDialog.getText(self,"输入卡牌名字","输入卡牌名字")
             if ok:
                 self.cards.cards[currentCardSet].append(cardName)
                 self.cards.update()
@@ -95,7 +103,7 @@ class CardsManager(QtWidgets.QMainWindow):
     #添加卡组
     def add_set(self):
         try:
-            setName,ok = QtWidgets.QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
+            setName,ok = QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
             if ok:
                 self.cards.cards[setName] = list()
                 self.cards.update()
@@ -106,7 +114,7 @@ class CardsManager(QtWidgets.QMainWindow):
     #重命名卡组
     def rename_set(self):
         try:
-            setName,ok = QtWidgets.QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
+            setName,ok = QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
             currentSet = self.ui.listWidget_cardSet.currentItem().text()
             if ok:
                 self.cards.cards[setName] = self.cards.cards.pop(currentSet)
@@ -120,9 +128,9 @@ class CardsManager(QtWidgets.QMainWindow):
         try:
             currentSet = self.ui.listWidget_cardSet.currentItem().text()
             share_str = json.dumps({currentSet:self.cards.cards[currentSet]},ensure_ascii=False)
-            clipboard = QtWidgets.QApplication.clipboard()
+            clipboard = QApplication.clipboard()
             clipboard.setText(share_str)
-            QtWidgets.QMessageBox.information(self,"复制成功","分享码已经复制到剪贴板")
+            QMessageBox.information(self,"复制成功","分享码已经复制到剪贴板")
         except:
             pass
 
@@ -139,19 +147,31 @@ class CardsManager(QtWidgets.QMainWindow):
 
     #截图
     def screenshot(self):
-        screenshot = ScreenShotsWin()
-        screenshot.showFullScreen()
-        screenshot.done.connect(self.importByimg)
+        zip_file = os.path.join(os.getcwd(),"PaddleOCR-json.zip")
+        folder = os.path.join(os.getcwd(),"PaddleOCR-json")
+        if os.path.exists(zip_file) and not os.path.exists(folder):
+            QMessageBox.warning(self,"请等待OCR模块解压","请等待OCR模块解压")
+            shutil.unpack_archive(zip_file, folder)
+            QMessageBox.information(self,"OCR模块解压完成","OCR模块解压完成")
+            screenshot = ScreenShotsWin()
+            screenshot.showFullScreen()
+            screenshot.done.connect(self.importByimg)
+        elif not os.path.exists(zip_file) and not os.path.exists(folder):
+            QMessageBox.warning(self,"OCR功能不可用","OCR功能不可用,请下载PaddleOCR-json.zip文件放入同目录")
+        else:
+            screenshot = ScreenShotsWin()
+            screenshot.showFullScreen()
+            screenshot.done.connect(self.importByimg)
     #图片导入
     def importByimg(self):
         try:
-            setName,ok = QtWidgets.QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
+            setName,ok = QInputDialog.getText(self,"输入卡组名字","输入卡组名字")
             ocr = Ocr()
             cards = ocr.to_list("../data/scan.png")
             cardsSet = {setName:cards}
             self.ui.textEdit_shareCode.setPlainText(json.dumps(cardsSet,ensure_ascii=False))
             self.ui.pushButton_codeImport.click()
-            QtWidgets.QMessageBox.information(self,"导入成功","导入成功")
+            QMessageBox.information(self,"导入成功","导入成功")
         except:
             pass
     #导入游戏
@@ -164,7 +184,7 @@ class CardsManager(QtWidgets.QMainWindow):
             pass
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
+    app = QApplication(sys.argv)
     widget = CardsManager()
     widget.show()
     sys.exit(app.exec())
