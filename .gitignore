@@ -6,6 +6,6 @@ autobuild.py
 autobuild.exe
 test_update.py
 PaddleOCR-json.zip
-*.build
-*.dist
+decksmanager.build
+decksmanager.dist
 *.onefile-build
