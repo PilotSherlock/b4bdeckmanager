@@ -1,0 +1,1281 @@
+[2023-01-23T04:43:57.165277 15064] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.165277 15064] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) base_dir = 
+[2023-01-23T04:43:57.165277 15064] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.165277 15064] Config: (default) compiler = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.165277 15064] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.165277 15064] Config: (default) compression = true
+[2023-01-23T04:43:57.165277 15064] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.165277 15064] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) debug = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.165277 15064] Config: (default) disable = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) file_clone = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) hard_link = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.165277 15064] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.165277 15064] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.165277 15064] Config: (default) max_files = 0
+[2023-01-23T04:43:57.165277 15064] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.165277 15064] Config: (default) namespace = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) path = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) read_only = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) recache = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) reshare = false
+[2023-01-23T04:43:57.165277 15064] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.165277 15064] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.165277 15064] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.165277 15064] Config: (default) stats = true
+[2023-01-23T04:43:57.165277 15064] Config: (default) stats_log = 
+[2023-01-23T04:43:57.165277 15064] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.165277 15064] Config: (default) umask = 
+[2023-01-23T04:43:57.166279 15064] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o __constants.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src __constants.c
+[2023-01-23T04:43:57.170281 2312 ] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) base_dir = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) compiler = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) compression = true
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) debug = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) disable = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) file_clone = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) hard_link = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.170281 2312 ] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) max_files = 0
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) namespace = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) path = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) read_only = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) recache = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) reshare = false
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) stats = true
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) stats_log = 
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.170281 2312 ] Config: (default) umask = 
+[2023-01-23T04:43:57.170281 2312 ] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o __helpers.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src __helpers.c
+[2023-01-23T04:43:57.176278 15064] Hostname: Nameless
+[2023-01-23T04:43:57.176278 15064] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.176278 15064] Compiler type: gcc
+[2023-01-23T04:43:57.177278 15064] Source file: __constants.c
+[2023-01-23T04:43:57.177278 15064] Object file: __constants.o
+[2023-01-23T04:43:57.177278 15064] Trying direct lookup
+[2023-01-23T04:43:57.178277 15064] Retrieved 0162r0l1u3vtvfuq5r4kst14112g5afrg from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/1/62r0l1u3vtvfuq5r4kst14112g5afrgM)
+[2023-01-23T04:43:57.178277 15064] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/1/62r0l1u3vtvfuq5r4kst14112g5afrgM
+[2023-01-23T04:43:57.178277 17812] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.178277 17812] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) base_dir = 
+[2023-01-23T04:43:57.178277 17812] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.178277 17812] Config: (default) compiler = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.178277 17812] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.178277 17812] Config: (default) compression = true
+[2023-01-23T04:43:57.178277 17812] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.178277 17812] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) debug = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.178277 17812] Config: (default) disable = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) file_clone = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) hard_link = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.178277 17812] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.178277 17812] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.178277 17812] Config: (default) max_files = 0
+[2023-01-23T04:43:57.178277 17812] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.178277 17812] Config: (default) namespace = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) path = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) read_only = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) recache = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) reshare = false
+[2023-01-23T04:43:57.178277 17812] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.178277 17812] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.178277 17812] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.178277 17812] Config: (default) stats = true
+[2023-01-23T04:43:57.178277 17812] Config: (default) stats_log = 
+[2023-01-23T04:43:57.178277 17812] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.178277 17812] Config: (default) umask = 
+[2023-01-23T04:43:57.178277 17812] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o __loader.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src __loader.c
+[2023-01-23T04:43:57.179279 2312 ] Hostname: Nameless
+[2023-01-23T04:43:57.180279 2312 ] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.180279 2312 ] Compiler type: gcc
+[2023-01-23T04:43:57.180279 2312 ] Source file: __helpers.c
+[2023-01-23T04:43:57.180279 2312 ] Object file: __helpers.o
+[2023-01-23T04:43:57.180279 2312 ] Trying direct lookup
+[2023-01-23T04:43:57.181280 2312 ] Retrieved e4b3hmcaubeupjmktr5nlqsb7m1p0sqae from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/4/b3hmcaubeupjmktr5nlqsb7m1p0sqaeM)
+[2023-01-23T04:43:57.181280 2312 ] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/4/b3hmcaubeupjmktr5nlqsb7m1p0sqaeM
+[2023-01-23T04:43:57.186278 7688 ] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) base_dir = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) compiler = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) compression = true
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) debug = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) disable = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) file_clone = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) hard_link = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.186278 7688 ] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) max_files = 0
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) namespace = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) path = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) read_only = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) recache = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) reshare = false
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) stats = true
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) stats_log = 
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.186278 7688 ] Config: (default) umask = 
+[2023-01-23T04:43:57.187277 7688 ] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.PySide6-preLoad.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.PySide6-preLoad.c
+[2023-01-23T04:43:57.187277 17812] Hostname: Nameless
+[2023-01-23T04:43:57.187277 17812] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.187277 17812] Compiler type: gcc
+[2023-01-23T04:43:57.188279 17812] Source file: __loader.c
+[2023-01-23T04:43:57.188279 17812] Object file: __loader.o
+[2023-01-23T04:43:57.188279 17812] Trying direct lookup
+[2023-01-23T04:43:57.189277 17812] Retrieved 064d5n7n53ondqtq065dftk6toic4ph4s from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/6/4d5n7n53ondqtq065dftk6toic4ph4sM)
+[2023-01-23T04:43:57.189277 17812] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/6/4d5n7n53ondqtq065dftk6toic4ph4sM
+[2023-01-23T04:43:57.194278 21548] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.194278 21548] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) base_dir = 
+[2023-01-23T04:43:57.194278 21548] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.194278 21548] Config: (default) compiler = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.194278 21548] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.194278 21548] Config: (default) compression = true
+[2023-01-23T04:43:57.194278 21548] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.194278 21548] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) debug = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.194278 21548] Config: (default) disable = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) file_clone = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) hard_link = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.194278 21548] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.194278 21548] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.194278 21548] Config: (default) max_files = 0
+[2023-01-23T04:43:57.194278 21548] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.194278 21548] Config: (default) namespace = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) path = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) read_only = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) recache = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) reshare = false
+[2023-01-23T04:43:57.194278 21548] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.194278 21548] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.194278 21548] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.194278 21548] Config: (default) stats = true
+[2023-01-23T04:43:57.194278 21548] Config: (default) stats_log = 
+[2023-01-23T04:43:57.194278 21548] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.194278 21548] Config: (default) umask = 
+[2023-01-23T04:43:57.194278 21548] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.PySide6.QtCore-postLoad.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.PySide6.QtCore-postLoad.c
+[2023-01-23T04:43:57.196278 7688 ] Hostname: Nameless
+[2023-01-23T04:43:57.196278 7688 ] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.196278 7688 ] Compiler type: gcc
+[2023-01-23T04:43:57.196278 7688 ] Source file: module.PySide6-preLoad.c
+[2023-01-23T04:43:57.196278 7688 ] Object file: module.PySide6-preLoad.o
+[2023-01-23T04:43:57.197278 7688 ] Trying direct lookup
+[2023-01-23T04:43:57.197278 7688 ] Retrieved 37de5de5oshefr3qg38b7om347i6po1cu from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/7/de5de5oshefr3qg38b7om347i6po1cuM)
+[2023-01-23T04:43:57.198277 7688 ] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/7/de5de5oshefr3qg38b7om347i6po1cuM
+[2023-01-23T04:43:57.203279 21548] Hostname: Nameless
+[2023-01-23T04:43:57.203279 21548] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.203279 21548] Compiler type: gcc
+[2023-01-23T04:43:57.204278 21548] Source file: module.PySide6.QtCore-postLoad.c
+[2023-01-23T04:43:57.204278 21548] Object file: module.PySide6.QtCore-postLoad.o
+[2023-01-23T04:43:57.204278 21548] Trying direct lookup
+[2023-01-23T04:43:57.205278 21548] Retrieved f211m6n0i6kh9pfvrm20acs9hg5ramvda from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/2/11m6n0i6kh9pfvrm20acs9hg5ramvdaM)
+[2023-01-23T04:43:57.205278 21548] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/2/11m6n0i6kh9pfvrm20acs9hg5ramvdaM
+[2023-01-23T04:43:57.206277 22468] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.206277 22468] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) base_dir = 
+[2023-01-23T04:43:57.206277 22468] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.206277 22468] Config: (default) compiler = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.206277 22468] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.206277 22468] Config: (default) compression = true
+[2023-01-23T04:43:57.206277 22468] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.206277 22468] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) debug = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.206277 22468] Config: (default) disable = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) file_clone = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) hard_link = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.206277 22468] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.206277 22468] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.206277 22468] Config: (default) max_files = 0
+[2023-01-23T04:43:57.206277 22468] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.206277 22468] Config: (default) namespace = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) path = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) read_only = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) recache = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) reshare = false
+[2023-01-23T04:43:57.206277 22468] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.206277 22468] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.206277 22468] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.206277 22468] Config: (default) stats = true
+[2023-01-23T04:43:57.206277 22468] Config: (default) stats_log = 
+[2023-01-23T04:43:57.206277 22468] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.206277 22468] Config: (default) umask = 
+[2023-01-23T04:43:57.206277 22468] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.PySide6.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.PySide6.c
+[2023-01-23T04:43:57.216277 22468] Hostname: Nameless
+[2023-01-23T04:43:57.216277 22468] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.216277 22468] Compiler type: gcc
+[2023-01-23T04:43:57.216277 22468] Source file: module.PySide6.c
+[2023-01-23T04:43:57.216277 22468] Object file: module.PySide6.o
+[2023-01-23T04:43:57.217277 22468] Trying direct lookup
+[2023-01-23T04:43:57.217277 22468] Retrieved 4018petcqoh4cplnheqd9ol60mhobov0m from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/0/18petcqoh4cplnheqd9ol60mhobov0mM)
+[2023-01-23T04:43:57.218278 22468] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/0/18petcqoh4cplnheqd9ol60mhobov0mM
+[2023-01-23T04:43:57.221278 21708] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.221278 21708] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) base_dir = 
+[2023-01-23T04:43:57.221278 21708] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.221278 21708] Config: (default) compiler = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.221278 21708] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.221278 21708] Config: (default) compression = true
+[2023-01-23T04:43:57.221278 21708] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.221278 21708] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) debug = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.221278 21708] Config: (default) disable = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) file_clone = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) hard_link = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.221278 21708] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.221278 21708] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.221278 21708] Config: (default) max_files = 0
+[2023-01-23T04:43:57.221278 21708] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.221278 21708] Config: (default) namespace = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) path = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) read_only = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) recache = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) reshare = false
+[2023-01-23T04:43:57.221278 21708] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.221278 21708] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.221278 21708] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.221278 21708] Config: (default) stats = true
+[2023-01-23T04:43:57.221278 21708] Config: (default) stats_log = 
+[2023-01-23T04:43:57.221278 21708] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.221278 21708] Config: (default) umask = 
+[2023-01-23T04:43:57.221278 21708] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.__main__.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.__main__.c
+[2023-01-23T04:43:57.227278 10752] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.227278 10752] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) base_dir = 
+[2023-01-23T04:43:57.227278 10752] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.227278 10752] Config: (default) compiler = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.227278 10752] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.227278 10752] Config: (default) compression = true
+[2023-01-23T04:43:57.227278 10752] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.227278 10752] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) debug = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.227278 10752] Config: (default) disable = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) file_clone = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) hard_link = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.227278 10752] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.227278 10752] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.227278 10752] Config: (default) max_files = 0
+[2023-01-23T04:43:57.227278 10752] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.227278 10752] Config: (default) namespace = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) path = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) read_only = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) recache = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) reshare = false
+[2023-01-23T04:43:57.227278 10752] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.227278 10752] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.227278 10752] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.227278 10752] Config: (default) stats = true
+[2023-01-23T04:43:57.227278 10752] Config: (default) stats_log = 
+[2023-01-23T04:43:57.227278 10752] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.227278 10752] Config: (default) umask = 
+[2023-01-23T04:43:57.228279 10752] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.c
+[2023-01-23T04:43:57.233279 21708] Hostname: Nameless
+[2023-01-23T04:43:57.233279 21708] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.233279 21708] Compiler type: gcc
+[2023-01-23T04:43:57.233279 21708] Source file: module.__main__.c
+[2023-01-23T04:43:57.233279 21708] Object file: module.__main__.o
+[2023-01-23T04:43:57.233279 21708] Trying direct lookup
+[2023-01-23T04:43:57.235278 21708] Retrieved 75036crksn8j1kdig48ultkk8obu3p8ja from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/036crksn8j1kdig48ultkk8obu3p8jaM)
+[2023-01-23T04:43:57.235278 21708] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/036crksn8j1kdig48ultkk8obu3p8jaM
+[2023-01-23T04:43:57.238279 10752] Hostname: Nameless
+[2023-01-23T04:43:57.238279 10752] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.238279 10752] Compiler type: gcc
+[2023-01-23T04:43:57.239277 10752] Source file: module.scr.c
+[2023-01-23T04:43:57.239277 10752] Object file: module.scr.o
+[2023-01-23T04:43:57.239277 10752] Trying direct lookup
+[2023-01-23T04:43:57.239277 10740] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.239277 10740] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) base_dir = 
+[2023-01-23T04:43:57.239277 10740] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.239277 10740] Config: (default) compiler = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.239277 10740] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.239277 10740] Config: (default) compression = true
+[2023-01-23T04:43:57.239277 10740] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.239277 10740] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) debug = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.239277 10740] Config: (default) disable = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) file_clone = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) hard_link = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.239277 10740] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.239277 10740] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.239277 10740] Config: (default) max_files = 0
+[2023-01-23T04:43:57.239277 10740] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.239277 10740] Config: (default) namespace = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) path = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) read_only = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) recache = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) reshare = false
+[2023-01-23T04:43:57.239277 10740] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.239277 10740] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.239277 10740] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.239277 10740] Config: (default) stats = true
+[2023-01-23T04:43:57.239277 10740] Config: (default) stats_log = 
+[2023-01-23T04:43:57.239277 10740] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.239277 10740] Config: (default) umask = 
+[2023-01-23T04:43:57.239277 10740] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.cards.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.cards.c
+[2023-01-23T04:43:57.240278 10752] Retrieved d423v3q3ultq83bjuhmqrlrgo9ir7nk2s from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/4/23v3q3ultq83bjuhmqrlrgo9ir7nk2sM)
+[2023-01-23T04:43:57.240278 10752] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/4/23v3q3ultq83bjuhmqrlrgo9ir7nk2sM
+[2023-01-23T04:43:57.250279 10740] Hostname: Nameless
+[2023-01-23T04:43:57.250279 10740] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.250279 10740] Compiler type: gcc
+[2023-01-23T04:43:57.251279 10740] Source file: module.scr.cards.c
+[2023-01-23T04:43:57.251279 10740] Object file: module.scr.cards.o
+[2023-01-23T04:43:57.251279 10740] Trying direct lookup
+[2023-01-23T04:43:57.252280 10740] Retrieved 082454j0ksgc2cakidp4he9flnonl4v0s from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/2454j0ksgc2cakidp4he9flnonl4v0sM)
+[2023-01-23T04:43:57.252280 10740] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/2454j0ksgc2cakidp4he9flnonl4v0sM
+[2023-01-23T04:43:57.254278 22276] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.254278 22276] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) base_dir = 
+[2023-01-23T04:43:57.254278 22276] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.254278 22276] Config: (default) compiler = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.254278 22276] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.254278 22276] Config: (default) compression = true
+[2023-01-23T04:43:57.254278 22276] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.254278 22276] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) debug = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.254278 22276] Config: (default) disable = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) file_clone = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) hard_link = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.254278 22276] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.254278 22276] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.254278 22276] Config: (default) max_files = 0
+[2023-01-23T04:43:57.254278 22276] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.254278 22276] Config: (default) namespace = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) path = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) read_only = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) recache = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) reshare = false
+[2023-01-23T04:43:57.254278 22276] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.254278 22276] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.254278 22276] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.254278 22276] Config: (default) stats = true
+[2023-01-23T04:43:57.254278 22276] Config: (default) stats_log = 
+[2023-01-23T04:43:57.254278 22276] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.254278 22276] Config: (default) umask = 
+[2023-01-23T04:43:57.255279 22276] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.importingame.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.importingame.c
+[2023-01-23T04:43:57.266278 22276] Hostname: Nameless
+[2023-01-23T04:43:57.266278 22276] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.266278 22276] Compiler type: gcc
+[2023-01-23T04:43:57.266278 22276] Source file: module.scr.importingame.c
+[2023-01-23T04:43:57.266278 22276] Object file: module.scr.importingame.o
+[2023-01-23T04:43:57.267279 22276] Trying direct lookup
+[2023-01-23T04:43:57.268278 22276] Retrieved 908bv24kburgmuemur0bml2qf1fb5tof0 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/8bv24kburgmuemur0bml2qf1fb5tof0M)
+[2023-01-23T04:43:57.268278 22276] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/8bv24kburgmuemur0bml2qf1fb5tof0M
+[2023-01-23T04:43:57.269278 19952] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.269278 19952] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) base_dir = 
+[2023-01-23T04:43:57.269278 19952] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.269278 19952] Config: (default) compiler = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.269278 19952] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.269278 19952] Config: (default) compression = true
+[2023-01-23T04:43:57.269278 19952] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.269278 19952] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) debug = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.269278 19952] Config: (default) disable = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) file_clone = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) hard_link = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.269278 19952] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.269278 19952] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.269278 19952] Config: (default) max_files = 0
+[2023-01-23T04:43:57.269278 19952] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.269278 19952] Config: (default) namespace = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) path = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) read_only = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) recache = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) reshare = false
+[2023-01-23T04:43:57.269278 19952] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.269278 19952] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.269278 19952] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.269278 19952] Config: (default) stats = true
+[2023-01-23T04:43:57.269278 19952] Config: (default) stats_log = 
+[2023-01-23T04:43:57.269278 19952] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.269278 19952] Config: (default) umask = 
+[2023-01-23T04:43:57.269278 19952] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.paddleocr.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.paddleocr.c
+[2023-01-23T04:43:57.272280 22308] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.272280 22308] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) base_dir = 
+[2023-01-23T04:43:57.272280 22308] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.272280 22308] Config: (default) compiler = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.272280 22308] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.272280 22308] Config: (default) compression = true
+[2023-01-23T04:43:57.272280 22308] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.272280 22308] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) debug = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.272280 22308] Config: (default) disable = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) file_clone = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) hard_link = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.272280 22308] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.272280 22308] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.272280 22308] Config: (default) max_files = 0
+[2023-01-23T04:43:57.272280 22308] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.272280 22308] Config: (default) namespace = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) path = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) read_only = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) recache = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) reshare = false
+[2023-01-23T04:43:57.272280 22308] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.272280 22308] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.272280 22308] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.272280 22308] Config: (default) stats = true
+[2023-01-23T04:43:57.272280 22308] Config: (default) stats_log = 
+[2023-01-23T04:43:57.272280 22308] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.272280 22308] Config: (default) umask = 
+[2023-01-23T04:43:57.273279 22308] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.ppocr.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.ppocr.c
+[2023-01-23T04:43:57.280279 19952] Hostname: Nameless
+[2023-01-23T04:43:57.280279 19952] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.280279 19952] Compiler type: gcc
+[2023-01-23T04:43:57.280279 19952] Source file: module.scr.paddleocr.c
+[2023-01-23T04:43:57.280279 19952] Object file: module.scr.paddleocr.o
+[2023-01-23T04:43:57.281277 19952] Trying direct lookup
+[2023-01-23T04:43:57.281277 19952] Retrieved 0dedpohjtdjnlask3vnn7eirguhsn585e from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/d/edpohjtdjnlask3vnn7eirguhsn585eM)
+[2023-01-23T04:43:57.282279 19952] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/d/edpohjtdjnlask3vnn7eirguhsn585eM
+[2023-01-23T04:43:57.283278 22308] Hostname: Nameless
+[2023-01-23T04:43:57.283278 22308] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.283278 22308] Compiler type: gcc
+[2023-01-23T04:43:57.283278 22308] Source file: module.scr.ppocr.c
+[2023-01-23T04:43:57.283278 22308] Object file: module.scr.ppocr.o
+[2023-01-23T04:43:57.284277 22308] Trying direct lookup
+[2023-01-23T04:43:57.284277 22308] Retrieved beeerus2uplcfsunak8i3ieeqh53v7j5q from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/e/eerus2uplcfsunak8i3ieeqh53v7j5qM)
+[2023-01-23T04:43:57.285277 22308] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/e/eerus2uplcfsunak8i3ieeqh53v7j5qM
+[2023-01-23T04:43:57.286278 17812] Got result key from manifest
+[2023-01-23T04:43:57.287278 17812] Retrieved a7c72r637ae8tl064f6p7m99h66co1vee from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/7/c72r637ae8tl064f6p7m99h66co1veeR)
+[2023-01-23T04:43:57.287278 17812] Reading embedded entry #0 .o (28272 bytes)
+[2023-01-23T04:43:57.287278 17812] Writing to __loader.o
+[2023-01-23T04:43:57.288278 17812] Succeeded getting cached result
+[2023-01-23T04:43:57.288278 17812] Result: direct_cache_hit
+[2023-01-23T04:43:57.288278 17812] Result: primary_storage_hit
+[2023-01-23T04:43:57.288278 17812] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2023-01-23T04:43:57.291279 17812] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2023-01-23T04:43:57.326278 22456] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.326278 22456] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) base_dir = 
+[2023-01-23T04:43:57.326278 22456] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.326278 22456] Config: (default) compiler = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.326278 22456] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.326278 22456] Config: (default) compression = true
+[2023-01-23T04:43:57.326278 22456] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.326278 22456] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) debug = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.326278 22456] Config: (default) disable = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) file_clone = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) hard_link = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.326278 22456] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.326278 22456] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.326278 22456] Config: (default) max_files = 0
+[2023-01-23T04:43:57.326278 22456] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.326278 22456] Config: (default) namespace = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) path = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) read_only = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) recache = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) reshare = false
+[2023-01-23T04:43:57.326278 22456] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.326278 22456] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.326278 22456] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.326278 22456] Config: (default) stats = true
+[2023-01-23T04:43:57.326278 22456] Config: (default) stats_log = 
+[2023-01-23T04:43:57.326278 22456] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.326278 22456] Config: (default) umask = 
+[2023-01-23T04:43:57.326278 22456] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.scr.screenshot.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.scr.screenshot.c
+[2023-01-23T04:43:57.335277 22456] Hostname: Nameless
+[2023-01-23T04:43:57.335277 22456] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.335277 22456] Compiler type: gcc
+[2023-01-23T04:43:57.336279 22456] Source file: module.scr.screenshot.c
+[2023-01-23T04:43:57.336279 22456] Object file: module.scr.screenshot.o
+[2023-01-23T04:43:57.336279 22456] Trying direct lookup
+[2023-01-23T04:43:57.337276 22456] Retrieved 1a0fhj5v5ed1gffrki5gm3hr6hugimca4 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/a/0fhj5v5ed1gffrki5gm3hr6hugimca4M)
+[2023-01-23T04:43:57.337276 22456] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/a/0fhj5v5ed1gffrki5gm3hr6hugimca4M
+[2023-01-23T04:43:57.626279 15064] Got result key from manifest
+[2023-01-23T04:43:57.626279 2312 ] Got result key from manifest
+[2023-01-23T04:43:57.626279 2312 ] Retrieved d30c0039jiiu741rmo2lmevt7besolopu from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/3/0c0039jiiu741rmo2lmevt7besolopuR)
+[2023-01-23T04:43:57.626279 15064] Retrieved 5ec87p8p8cu693l9rhi5huto82j1j82f6 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/e/c87p8p8cu693l9rhi5huto82j1j82f6R)
+[2023-01-23T04:43:57.627281 15064] Reading embedded entry #0 .o (2821 bytes)
+[2023-01-23T04:43:57.627281 15064] Writing to __constants.o
+[2023-01-23T04:43:57.627281 2312 ] Reading embedded entry #0 .o (466 bytes)
+[2023-01-23T04:43:57.627281 2312 ] Writing to __helpers.o
+[2023-01-23T04:43:57.627281 15064] Succeeded getting cached result
+[2023-01-23T04:43:57.627281 15064] Result: direct_cache_hit
+[2023-01-23T04:43:57.628279 15064] Result: primary_storage_hit
+[2023-01-23T04:43:57.628279 2312 ] Succeeded getting cached result
+[2023-01-23T04:43:57.628279 2312 ] Result: direct_cache_hit
+[2023-01-23T04:43:57.628279 15064] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/8/stats.lock
+[2023-01-23T04:43:57.629279 7688 ] Got result key from manifest
+[2023-01-23T04:43:57.628279 2312 ] Result: primary_storage_hit
+[2023-01-23T04:43:57.629279 7688 ] Retrieved 02f0kaedlsrt1740g6hd9k7ghr9aruvao from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/f0kaedlsrt1740g6hd9k7ghr9aruvaoR)
+[2023-01-23T04:43:57.629279 2312 ] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock
+[2023-01-23T04:43:57.629279 21548] Got result key from manifest
+[2023-01-23T04:43:57.630278 7688 ] Reading embedded entry #0 .o (9102 bytes)
+[2023-01-23T04:43:57.630278 7688 ] Writing to module.PySide6-preLoad.o
+[2023-01-23T04:43:57.630278 21548] Retrieved 78b3vi6jrqaocd8lkjv66bq01p49cap3o from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/b3vi6jrqaocd8lkjv66bq01p49cap3oR)
+[2023-01-23T04:43:57.630278 7688 ] Succeeded getting cached result
+[2023-01-23T04:43:57.630278 7688 ] Result: direct_cache_hit
+[2023-01-23T04:43:57.630278 7688 ] Result: primary_storage_hit
+[2023-01-23T04:43:57.631280 21548] Reading embedded entry #0 .o (9982 bytes)
+[2023-01-23T04:43:57.631280 21548] Writing to module.PySide6.QtCore-postLoad.o
+[2023-01-23T04:43:57.631280 7688 ] lockfile_acquire: CreateFile F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock: 另一个程序正在使用此文件，进程无法访问。 (32)
+[2023-01-23T04:43:57.631280 7688 ] lockfile_acquire: failed to acquire F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock; sleeping 1000 microseconds
+[2023-01-23T04:43:57.632279 21548] Succeeded getting cached result
+[2023-01-23T04:43:57.632279 21548] Result: direct_cache_hit
+[2023-01-23T04:43:57.632279 21548] Result: primary_storage_hit
+[2023-01-23T04:43:57.633280 21548] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/c/stats.lock
+[2023-01-23T04:43:57.635278 7688 ] lockfile_acquire: CreateFile F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock: 另一个程序正在使用此文件，进程无法访问。 (32)
+[2023-01-23T04:43:57.635278 7688 ] lockfile_acquire: failed to acquire F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock; sleeping 2000 microseconds
+[2023-01-23T04:43:57.638278 2312 ] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock
+[2023-01-23T04:43:57.642279 21548] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/c/stats.lock
+[2023-01-23T04:43:57.646278 22468] Got result key from manifest
+[2023-01-23T04:43:57.646278 22468] Retrieved 2f014u95v2801qd80qfbrn2itpd4omrls from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/f/014u95v2801qd80qfbrn2itpd4omrlsR)
+[2023-01-23T04:43:57.647279 22468] Reading embedded entry #0 .o (53995 bytes)
+[2023-01-23T04:43:57.647279 22468] Writing to module.PySide6.o
+[2023-01-23T04:43:57.649278 22468] Succeeded getting cached result
+[2023-01-23T04:43:57.649278 22468] Result: direct_cache_hit
+[2023-01-23T04:43:57.649278 22468] Result: primary_storage_hit
+[2023-01-23T04:43:57.649278 22468] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/4/stats.lock
+[2023-01-23T04:43:57.651279 7688 ] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock
+[2023-01-23T04:43:57.652279 22468] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/4/stats.lock
+[2023-01-23T04:43:57.654280 7688 ] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/8/stats.lock
+[2023-01-23T04:43:57.670277 21708] Got result key from manifest
+[2023-01-23T04:43:57.670277 21708] Retrieved da469ug5juigdgsoroh8hv1ms9vomgijk from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/a/469ug5juigdgsoroh8hv1ms9vomgijkR)
+[2023-01-23T04:43:57.672279 21708] Reading embedded entry #0 .o (76440 bytes)
+[2023-01-23T04:43:57.672279 21708] Writing to module.__main__.o
+[2023-01-23T04:43:57.672279 21708] Succeeded getting cached result
+[2023-01-23T04:43:57.672279 21708] Result: direct_cache_hit
+[2023-01-23T04:43:57.672279 21708] Result: primary_storage_hit
+[2023-01-23T04:43:57.673278 21708] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/c/stats.lock
+[2023-01-23T04:43:57.675279 21708] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/c/stats.lock
+[2023-01-23T04:43:57.677277 10752] Got result key from manifest
+[2023-01-23T04:43:57.677277 10752] Retrieved 0e36to22m4m0muhpk0fv3tte97jshtkle from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/e/36to22m4m0muhpk0fv3tte97jshtkleR)
+[2023-01-23T04:43:57.682278 10740] Got result key from manifest
+[2023-01-23T04:43:57.682278 10752] Reading embedded entry #0 .o (6433 bytes)
+[2023-01-23T04:43:57.682278 10752] Writing to module.scr.o
+[2023-01-23T04:43:57.682278 10740] Retrieved 103f9r26i25asuscdihl4t1bl34dhq2ci from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/3f9r26i25asuscdihl4t1bl34dhq2ciR)
+[2023-01-23T04:43:57.683278 10752] Succeeded getting cached result
+[2023-01-23T04:43:57.683278 10752] Result: direct_cache_hit
+[2023-01-23T04:43:57.683278 10752] Result: primary_storage_hit
+[2023-01-23T04:43:57.683278 10740] Reading embedded entry #0 .o (29114 bytes)
+[2023-01-23T04:43:57.683278 10740] Writing to module.scr.cards.o
+[2023-01-23T04:43:57.683278 10752] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/0/stats.lock
+[2023-01-23T04:43:57.684279 10740] Succeeded getting cached result
+[2023-01-23T04:43:57.684279 10740] Result: direct_cache_hit
+[2023-01-23T04:43:57.684279 10740] Result: primary_storage_hit
+[2023-01-23T04:43:57.685278 10740] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2023-01-23T04:43:57.688278 10740] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2023-01-23T04:43:57.689280 18504] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.689280 18504] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) base_dir = 
+[2023-01-23T04:43:57.689280 18504] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.689280 18504] Config: (default) compiler = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.689280 18504] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.689280 18504] Config: (default) compression = true
+[2023-01-23T04:43:57.689280 18504] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.689280 18504] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) debug = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.689280 18504] Config: (default) disable = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) file_clone = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) hard_link = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.689280 18504] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.689280 18504] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.689280 18504] Config: (default) max_files = 0
+[2023-01-23T04:43:57.689280 18504] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.689280 18504] Config: (default) namespace = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) path = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) read_only = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) recache = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) reshare = false
+[2023-01-23T04:43:57.689280 18504] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.689280 18504] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.689280 18504] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.689280 18504] Config: (default) stats = true
+[2023-01-23T04:43:57.689280 18504] Config: (default) stats_log = 
+[2023-01-23T04:43:57.689280 18504] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.689280 18504] Config: (default) umask = 
+[2023-01-23T04:43:57.689280 18504] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.shiboken6.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.shiboken6.c
+[2023-01-23T04:43:57.689280 10752] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/0/stats.lock
+[2023-01-23T04:43:57.698280 18656] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.698280 18656] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) base_dir = 
+[2023-01-23T04:43:57.698280 18656] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.698280 18656] Config: (default) compiler = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.698280 18656] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.698280 18656] Config: (default) compression = true
+[2023-01-23T04:43:57.698280 18656] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.698280 18656] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) debug = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.698280 18656] Config: (default) disable = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) file_clone = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) hard_link = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.698280 18656] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.698280 18656] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.698280 18656] Config: (default) max_files = 0
+[2023-01-23T04:43:57.698280 18656] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.698280 18656] Config: (default) namespace = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) path = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) read_only = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) recache = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) reshare = false
+[2023-01-23T04:43:57.698280 18656] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.698280 18656] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.698280 18656] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.698280 18656] Config: (default) stats = true
+[2023-01-23T04:43:57.698280 18656] Config: (default) stats_log = 
+[2023-01-23T04:43:57.698280 18656] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.698280 18656] Config: (default) umask = 
+[2023-01-23T04:43:57.698280 18656] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.ui_decksmanager.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.ui_decksmanager.c
+[2023-01-23T04:43:57.699277 22276] Got result key from manifest
+[2023-01-23T04:43:57.699277 18504] Hostname: Nameless
+[2023-01-23T04:43:57.699277 22276] Retrieved 3f94uim5d77o0qrb44phuut4gqvt2armk from primary storage (F:\Users\kebiq[2023-01-23T04:43:57.699277 18504] Compiler type: gcc
+o0qrb44phuut4gqvt2armkR)
+[2023-01-23T04:43:57.700277 18504] Source file: module.shiboken6.c
+[2023-01-23T04:43:57.700277 18504] Object file: module.shiboken6.o
+[2023-01-23T04:43:57.700277 18504] Trying direct lookup
+[2023-01-23T04:43:57.700277 22276] Reading embedded entry #0 .o (60695 bytes)
+[2023-01-23T04:43:57.700277 22276] Writing to module.scr.importingame.o
+[2023-01-23T04:43:57.701278 22276] Succeeded getting cached result
+[2023-01-23T04:43:57.701278 22276] Result: direct_cache_hit
+[2023-01-23T04:43:57.701278 22276] Result: primary_storage_hit
+[2023-01-23T04:43:57.701278 18504] Retrieved dae7c52rlce5hto0s57obp8fej8mjkv0u from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/a/e7c52rlce5hto0s57obp8fej8mjkv0uM)
+[2023-01-23T04:43:57.701278 22276] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/4/stats.lock
+[2023-01-23T04:43:57.701278 18504] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/a/e7c52rlce5hto0s57obp8fej8mjkv0uM
+[2023-01-23T04:43:57.704279 22276] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/4/stats.lock
+[2023-01-23T04:43:57.708280 18656] Hostname: Nameless
+[2023-01-23T04:43:57.708280 18656] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.709280 18656] Compiler type: gcc
+[2023-01-23T04:43:57.709280 18656] Source file: module.ui_decksmanager.c
+[2023-01-23T04:43:57.709280 18656] Object file: module.ui_decksmanager.o
+[2023-01-23T04:43:57.710280 18656] Trying direct lookup
+[2023-01-23T04:43:57.711281 18656] Retrieved 79abkh106d7lmjcvg8k3umg3vjvlskmn2 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/9/abkh106d7lmjcvg8k3umg3vjvlskmn2M)
+[2023-01-23T04:43:57.711281 18656] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/9/abkh106d7lmjcvg8k3umg3vjvlskmn2M
+[2023-01-23T04:43:57.712279 22308] Got result key from manifest
+[2023-01-23T04:43:57.712279 22308] Retrieved b401hiu2bbt8b1s1setjgrjfppjbqrj6i from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/4/01hiu2bbt8b1s1setjgrjfppjbqrj6iR)
+[2023-01-23T04:43:57.712279 19952] Got result key from manifest
+[2023-01-23T04:43:57.712279 19952] Retrieved b5fb3i8mp8th4qfbvdtfslcrksrmnb8sm from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/5/fb3i8mp8th4qfbvdtfslcrksrmnb8smR)
+[2023-01-23T04:43:57.713278 22308] Reading embedded entry #0 .o (53493 bytes)
+[2023-01-23T04:43:57.713278 22308] Writing to module.scr.ppocr.o
+[2023-01-23T04:43:57.713278 19952] Reading embedded entry #0 .o (22657 bytes)
+[2023-01-23T04:43:57.713278 19952] Writing to module.scr.paddleocr.o
+[2023-01-23T04:43:57.714280 22308] Succeeded getting cached result
+[2023-01-23T04:43:57.714280 22308] Result: direct_cache_hit
+[2023-01-23T04:43:57.714280 22308] Result: primary_storage_hit
+[2023-01-23T04:43:57.714280 19952] Succeeded getting cached result
+[2023-01-23T04:43:57.714280 22456] Got result key from manifest
+[2023-01-23T04:43:57.714280 19952] Result: primary_storage_hit
+[2023-01-23T04:43:57.714280 22308] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2023-01-23T04:43:57.714280 22456] Retrieved 4c68r3a3u0lc4j4fim9q7861nsd0lgdh8 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/c/68r3a3u0lc4j4fim9q7861nsd0lgdh8R)
+[2023-01-23T04:43:57.715279 19952] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/0/stats.lock
+[2023-01-23T04:43:57.715279 22456] Reading embedded entry #0 .o (47831 bytes)
+[2023-01-23T04:43:57.715279 22456] Writing to module.scr.screenshot.o
+[2023-01-23T04:43:57.716280 22456] Succeeded getting cached result
+[2023-01-23T04:43:57.716280 22456] Result: direct_cache_hit
+[2023-01-23T04:43:57.716280 22456] Result: primary_storage_hit
+[2023-01-23T04:43:57.717279 22456] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/8/stats.lock
+[2023-01-23T04:43:57.717279 19952] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/0/stats.lock
+[2023-01-23T04:43:57.718280 22308] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2023-01-23T04:43:57.723280 22456] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/8/stats.lock
+[2023-01-23T04:43:57.740277 10828] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.740277 10828] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) base_dir = 
+[2023-01-23T04:43:57.740277 10828] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.740277 10828] Config: (default) compiler = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.740277 10828] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.740277 10828] Config: (default) compression = true
+[2023-01-23T04:43:57.740277 10828] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.740277 10828] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) debug = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.740277 10828] Config: (default) disable = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) file_clone = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) hard_link = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.740277 10828] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.740277 10828] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.740277 10828] Config: (default) max_files = 0
+[2023-01-23T04:43:57.740277 10828] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.740277 10828] Config: (default) namespace = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) path = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) read_only = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) recache = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) reshare = false
+[2023-01-23T04:43:57.740277 10828] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.740277 10828] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.740277 10828] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.740277 10828] Config: (default) stats = true
+[2023-01-23T04:43:57.740277 10828] Config: (default) stats_log = 
+[2023-01-23T04:43:57.740277 10828] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.740277 10828] Config: (default) umask = 
+[2023-01-23T04:43:57.740277 10828] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o module.win32con.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src module.win32con.c
+[2023-01-23T04:43:57.749278 2288 ] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) base_dir = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) compiler = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) compression = true
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) debug = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) disable = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) file_clone = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) hard_link = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.749278 2288 ] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) max_files = 0
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) namespace = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) path = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) read_only = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) recache = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) reshare = false
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) stats = true
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) stats_log = 
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.749278 2288 ] Config: (default) umask = 
+[2023-01-23T04:43:57.749278 2288 ] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src static_src\MainProgram.c
+[2023-01-23T04:43:57.750280 10828] Hostname: Nameless
+[2023-01-23T04:43:57.750280 10828] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.750280 10828] Compiler type: gcc
+[2023-01-23T04:43:57.750280 10828] Source file: module.win32con.c
+[2023-01-23T04:43:57.750280 10828] Object file: module.win32con.o
+[2023-01-23T04:43:57.750280 10828] Trying direct lookup
+[2023-01-23T04:43:57.752278 10828] Retrieved 3c907fnf4bfa78ml9ggsm6nlprp1oq0j2 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/c/907fnf4bfa78ml9ggsm6nlprp1oq0j2M)
+[2023-01-23T04:43:57.753279 10828] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/c/907fnf4bfa78ml9ggsm6nlprp1oq0j2M
+[2023-01-23T04:43:57.758279 2288 ] Hostname: Nameless
+[2023-01-23T04:43:57.758279 2288 ] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.758279 10528] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.758279 10528] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) base_dir = 
+[2023-01-23T04:43:57.758279 10528] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.758279 10528] Config: (default) compiler = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.758279 10528] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.758279 10528] Config: (default) compression = true
+[2023-01-23T04:43:57.758279 10528] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.758279 10528] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) debug = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.758279 10528] Config: (default) disable = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) file_clone = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) hard_link = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.758279 10528] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.758279 10528] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.758279 10528] Config: (default) max_files = 0
+[2023-01-23T04:43:57.758279 10528] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.758279 10528] Config: (default) namespace = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) path = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) read_only = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) recache = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) reshare = false
+[2023-01-23T04:43:57.758279 10528] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.758279 10528] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.758279 10528] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.758279 10528] Config: (default) stats = true
+[2023-01-23T04:43:57.758279 10528] Config: (default) stats_log = 
+[2023-01-23T04:43:57.758279 10528] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.758279 10528] Config: (default) umask = 
+[2023-01-23T04:43:57.758279 10528] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\CompiledCellType.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCellType.c
+[2023-01-23T04:43:57.758279 2288 ] Source file: static_src\MainProgram.c
+[2023-01-23T04:43:57.758279 2288 ] Object file: static_src\MainProgram.o
+[2023-01-23T04:43:57.759278 2288 ] Trying direct lookup
+[2023-01-23T04:43:57.759278 2288 ] Retrieved 6b6ftbiodhkn398jn46kfa0gcnttcabgg from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/b/6ftbiodhkn398jn46kfa0gcnttcabggM)
+[2023-01-23T04:43:57.759278 2288 ] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/b/6ftbiodhkn398jn46kfa0gcnttcabggM
+[2023-01-23T04:43:57.767279 10528] Hostname: Nameless
+[2023-01-23T04:43:57.767279 10528] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.767279 10528] Compiler type: gcc
+[2023-01-23T04:43:57.767279 10528] Source file: static_src\CompiledCellType.c
+[2023-01-23T04:43:57.767279 10528] Object file: static_src\CompiledCellType.o
+[2023-01-23T04:43:57.767279 10528] Trying direct lookup
+[2023-01-23T04:43:57.768277 10528] Retrieved 02d2mqdekh4eo146tti9dbmi10h6ol6jm from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/d2mqdekh4eo146tti9dbmi10h6ol6jmM)
+[2023-01-23T04:43:57.768277 10528] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/d2mqdekh4eo146tti9dbmi10h6ol6jmM
+[2023-01-23T04:43:57.904278 18504] Got result key from manifest
+[2023-01-23T04:43:57.904278 18504] Retrieved dad2lvgs5gliah2u4jeebtr0dbiijge6s from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/a/d2lvgs5gliah2u4jeebtr0dbiijge6sR)
+[2023-01-23T04:43:57.905277 18504] Reading embedded entry #0 .o (11280 bytes)
+[2023-01-23T04:43:57.905277 18504] Writing to module.shiboken6.o
+[2023-01-23T04:43:57.905277 18504] Succeeded getting cached result
+[2023-01-23T04:43:57.906278 18504] Result: direct_cache_hit
+[2023-01-23T04:43:57.906278 18504] Result: primary_storage_hit
+[2023-01-23T04:43:57.906278 18504] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/8/stats.lock
+[2023-01-23T04:43:57.909279 18504] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/8/stats.lock
+[2023-01-23T04:43:57.920280 18656] Got result key from manifest
+[2023-01-23T04:43:57.920280 18656] Retrieved 9dd53f989ul98aj9afooj24h7odloq10a from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/d/d53f989ul98aj9afooj24h7odloq10aR)
+[2023-01-23T04:43:57.921277 18656] Reading embedded entry #0 .o (86509 bytes)
+[2023-01-23T04:43:57.921277 18656] Writing to module.ui_decksmanager.o
+[2023-01-23T04:43:57.922279 18656] Succeeded getting cached result
+[2023-01-23T04:43:57.922279 18656] Result: direct_cache_hit
+[2023-01-23T04:43:57.922279 18656] Result: primary_storage_hit
+[2023-01-23T04:43:57.922279 18656] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/0/stats.lock
+[2023-01-23T04:43:57.926277 18656] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/0/stats.lock
+[2023-01-23T04:43:57.933280 13692] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.933280 13692] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) base_dir = 
+[2023-01-23T04:43:57.933280 13692] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.933280 13692] Config: (default) compiler = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.933280 13692] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.933280 13692] Config: (default) compression = true
+[2023-01-23T04:43:57.933280 13692] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.933280 13692] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) debug = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.933280 13692] Config: (default) disable = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) file_clone = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) hard_link = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.933280 13692] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.933280 13692] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.933280 13692] Config: (default) max_files = 0
+[2023-01-23T04:43:57.933280 13692] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.933280 13692] Config: (default) namespace = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) path = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) read_only = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) recache = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) reshare = false
+[2023-01-23T04:43:57.933280 13692] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.933280 13692] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.933280 13692] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.933280 13692] Config: (default) stats = true
+[2023-01-23T04:43:57.933280 13692] Config: (default) stats_log = 
+[2023-01-23T04:43:57.933280 13692] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.933280 13692] Config: (default) umask = 
+[2023-01-23T04:43:57.933280 13692] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledFunctionType.c
+[2023-01-23T04:43:57.942279 13692] Hostname: Nameless
+[2023-01-23T04:43:57.942279 13692] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.942279 13692] Compiler type: gcc
+[2023-01-23T04:43:57.942279 13692] Source file: static_src\CompiledFunctionType.c
+[2023-01-23T04:43:57.943280 13692] Object file: static_src\CompiledFunctionType.o
+[2023-01-23T04:43:57.943280 13692] Trying direct lookup
+[2023-01-23T04:43:57.944279 13692] Retrieved 0cf7fk009bksbhjm6hmvpo2orroqomgd4 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/c/f7fk009bksbhjm6hmvpo2orroqomgd4M)
+[2023-01-23T04:43:57.944279 13692] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/c/f7fk009bksbhjm6hmvpo2orroqomgd4M
+[2023-01-23T04:43:57.958281 896  ] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.958281 896  ] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) base_dir = 
+[2023-01-23T04:43:57.958281 896  ] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.958281 896  ] Config: (default) compiler = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.958281 896  ] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.958281 896  ] Config: (default) compression = true
+[2023-01-23T04:43:57.958281 896  ] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.958281 896  ] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) debug = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.958281 896  ] Config: (default) disable = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) file_clone = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) hard_link = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.958281 896  ] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.958281 896  ] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.958281 896  ] Config: (default) max_files = 0
+[2023-01-23T04:43:57.958281 896  ] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.958281 896  ] Config: (default) namespace = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) path = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) read_only = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) recache = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) reshare = false
+[2023-01-23T04:43:57.958281 896  ] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.958281 896  ] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.958281 896  ] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.958281 896  ] Config: (default) stats = true
+[2023-01-23T04:43:57.958281 896  ] Config: (default) stats_log = 
+[2023-01-23T04:43:57.958281 896  ] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.958281 896  ] Config: (default) umask = 
+[2023-01-23T04:43:57.958281 896  ] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\CompiledGeneratorType.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledGeneratorType.c
+[2023-01-23T04:43:57.966279 18684] === CCACHE 4.6 STARTED =========================================
+[2023-01-23T04:43:57.966279 18684] Config: (default) absolute_paths_in_stderr = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) base_dir = 
+[2023-01-23T04:43:57.966279 18684] Config: (environment) cache_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-01-23T04:43:57.966279 18684] Config: (default) compiler = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) compiler_check = mtime
+[2023-01-23T04:43:57.966279 18684] Config: (default) compiler_type = auto
+[2023-01-23T04:43:57.966279 18684] Config: (default) compression = true
+[2023-01-23T04:43:57.966279 18684] Config: (default) compression_level = 0
+[2023-01-23T04:43:57.966279 18684] Config: (default) cpp_extension = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) debug = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) debug_dir = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) depend_mode = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) direct_mode = true
+[2023-01-23T04:43:57.966279 18684] Config: (default) disable = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) extra_files_to_hash = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) file_clone = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) hard_link = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) hash_dir = true
+[2023-01-23T04:43:57.966279 18684] Config: (default) ignore_headers_in_manifest = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) ignore_options = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) inode_cache = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) keep_comments_cpp = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) limit_multiple = 0.8
+[2023-01-23T04:43:57.966279 18684] Config: (environment) log_file = E:\mycode\python\b4bCards\build\releases\decksmanager.build\ccache-16380.txt
+[2023-01-23T04:43:57.966279 18684] Config: (default) max_files = 0
+[2023-01-23T04:43:57.966279 18684] Config: (default) max_size = 5.0G
+[2023-01-23T04:43:57.966279 18684] Config: (default) namespace = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) path = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) pch_external_checksum = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) prefix_command = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) prefix_command_cpp = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) read_only = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) read_only_direct = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) recache = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) reshare = false
+[2023-01-23T04:43:57.966279 18684] Config: (default) run_second_cpp = true
+[2023-01-23T04:43:57.966279 18684] Config: (default) secondary_storage = 
+[2023-01-23T04:43:57.966279 18684] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-01-23T04:43:57.966279 18684] Config: (default) stats = true
+[2023-01-23T04:43:57.966279 18684] Config: (default) stats_log = 
+[2023-01-23T04:43:57.966279 18684] Config: (default) temporary_dir = F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-01-23T04:43:57.966279 18684] Config: (default) umask = 
+[2023-01-23T04:43:57.967278 18684] Command line: F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\InspectPatcher.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IF:\Users\kebiq\AppData\Local\Programs\Python\Python310\include -I. -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\include -IE:\mycode\python\b4bCards\venv\lib\SITE-P~1\nuitka\build\static_src static_src\InspectPatcher.c
+[2023-01-23T04:43:57.968279 896  ] Hostname: Nameless
+[2023-01-23T04:43:57.968279 896  ] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.968279 896  ] Compiler type: gcc
+[2023-01-23T04:43:57.968279 896  ] Source file: static_src\CompiledGeneratorType.c
+[2023-01-23T04:43:57.968279 896  ] Object file: static_src\CompiledGeneratorType.o
+[2023-01-23T04:43:57.968279 896  ] Trying direct lookup
+[2023-01-23T04:43:57.969278 896  ] Retrieved cd90onvjn3eejnmfihcdiu7npnkah47s4 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/d/90onvjn3eejnmfihcdiu7npnkah47s4M)
+[2023-01-23T04:43:57.969278 896  ] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/d/90onvjn3eejnmfihcdiu7npnkah47s4M
+[2023-01-23T04:43:57.975278 18684] Hostname: Nameless
+[2023-01-23T04:43:57.976277 18684] Working directory: E:/mycode/python/b4bCards/build/releases/decksmanager.build
+[2023-01-23T04:43:57.976277 18684] Compiler type: gcc
+[2023-01-23T04:43:57.976277 18684] Source file: static_src\InspectPatcher.c
+[2023-01-23T04:43:57.976277 18684] Object file: static_src\InspectPatcher.o
+[2023-01-23T04:43:57.976277 18684] Trying direct lookup
+[2023-01-23T04:43:57.976277 10828] Got result key from manifest
+[2023-01-23T04:43:57.977279 10828] Retrieved cc1753imqktjk34lh1lmrhpfb94m79aao from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/c/1753imqktjk34lh1lmrhpfb94m79aaoR)
+[2023-01-23T04:43:57.977279 18684] Retrieved 8df6c55ap9ibf11594jc1blfibdpo5sra from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/d/f6c55ap9ibf11594jc1blfibdpo5sraM)
+[2023-01-23T04:43:57.978282 18684] Looking for result key in F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/d/f6c55ap9ibf11594jc1blfibdpo5sraM
+[2023-01-23T04:43:57.978282 10828] Reading embedded entry #0 .o (334864 bytes)
+[2023-01-23T04:43:57.978282 10828] Writing to module.win32con.o
+[2023-01-23T04:43:57.979280 10828] Succeeded getting cached result
+[2023-01-23T04:43:57.979280 10828] Result: direct_cache_hit
+[2023-01-23T04:43:57.979280 10828] Result: primary_storage_hit
+[2023-01-23T04:43:57.980278 10828] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/c/stats.lock
+[2023-01-23T04:43:57.982277 10828] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/c/stats.lock
+[2023-01-23T04:43:57.983277 2288 ] Got result key from manifest
+[2023-01-23T04:43:57.983277 2288 ] Retrieved 54b2527rl1n8nsk0h6ltsh4kkiati6jp4 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/4/b2527rl1n8nsk0h6ltsh4kkiati6jp4R)
+[2023-01-23T04:43:57.984279 2288 ] Reading embedded entry #0 .o (6832 bytes)
+[2023-01-23T04:43:57.984279 2288 ] Writing to static_src\MainProgram.o
+[2023-01-23T04:43:57.984279 2288 ] Succeeded getting cached result
+[2023-01-23T04:43:57.984279 2288 ] Result: direct_cache_hit
+[2023-01-23T04:43:57.984279 2288 ] Result: primary_storage_hit
+[2023-01-23T04:43:57.985277 2288 ] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/0/stats.lock
+[2023-01-23T04:43:57.988279 2288 ] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/0/stats.lock
+[2023-01-23T04:43:57.992281 10528] Got result key from manifest
+[2023-01-23T04:43:57.992281 10528] Retrieved f1d05otf6f5teoo86cf2qt4nq5uq18tec from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/1/d05otf6f5teoo86cf2qt4nq5uq18tecR)
+[2023-01-23T04:43:57.993278 10528] Reading embedded entry #0 .o (5766 bytes)
+[2023-01-23T04:43:57.993278 10528] Writing to static_src\CompiledCellType.o
+[2023-01-23T04:43:57.993278 10528] Succeeded getting cached result
+[2023-01-23T04:43:57.993278 10528] Result: direct_cache_hit
+[2023-01-23T04:43:57.993278 10528] Result: primary_storage_hit
+[2023-01-23T04:43:57.994278 10528] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/0/stats.lock
+[2023-01-23T04:43:58.001279 10528] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/0/stats.lock
+[2023-01-23T04:43:58.141277 896  ] Got result key from manifest
+[2023-01-23T04:43:58.141277 896  ] Retrieved b54ba2m0lfi8n69d5lkoa4q902vn01308 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/5/4ba2m0lfi8n69d5lkoa4q902vn01308R)
+[2023-01-23T04:43:58.142277 896  ] Reading embedded entry #0 .o (103459 bytes)
+[2023-01-23T04:43:58.142277 896  ] Writing to static_src\CompiledGeneratorType.o
+[2023-01-23T04:43:58.142277 896  ] Succeeded getting cached result
+[2023-01-23T04:43:58.142277 896  ] Result: direct_cache_hit
+[2023-01-23T04:43:58.142277 896  ] Result: primary_storage_hit
+[2023-01-23T04:43:58.142277 896  ] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/0/stats.lock
+[2023-01-23T04:43:58.144277 896  ] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/0/stats.lock
+[2023-01-23T04:43:58.145280 18684] Got result key from manifest
+[2023-01-23T04:43:58.145280 18684] Retrieved d2490rserh6iu6pocdr96dbhcc084hvlk from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/2/490rserh6iu6pocdr96dbhcc084hvlkR)
+[2023-01-23T04:43:58.145280 18684] Reading embedded entry #0 .o (8960 bytes)
+[2023-01-23T04:43:58.145280 18684] Writing to static_src\InspectPatcher.o
+[2023-01-23T04:43:58.146279 18684] Succeeded getting cached result
+[2023-01-23T04:43:58.146279 18684] Result: direct_cache_hit
+[2023-01-23T04:43:58.146279 18684] Result: primary_storage_hit
+[2023-01-23T04:43:58.146279 18684] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/c/stats.lock
+[2023-01-23T04:43:58.149282 18684] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/c/stats.lock
+[2023-01-23T04:43:58.150280 13692] Got result key from manifest
+[2023-01-23T04:43:58.150280 13692] Retrieved 993bfplraid7h2n5np4dm8l4s1e3o1su6 from primary storage (F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/9/3bfplraid7h2n5np4dm8l4s1e3o1su6R)
+[2023-01-23T04:43:58.152282 13692] Reading embedded entry #0 .o (870599 bytes)
+[2023-01-23T04:43:58.152282 13692] Writing to static_src\CompiledFunctionType.o
+[2023-01-23T04:43:58.154279 13692] Succeeded getting cached result
+[2023-01-23T04:43:58.154279 13692] Result: direct_cache_hit
+[2023-01-23T04:43:58.154279 13692] Result: primary_storage_hit
+[2023-01-23T04:43:58.155276 13692] Acquired lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/c/stats.lock
+[2023-01-23T04:43:58.161277 13692] Releasing lock F:\Users\kebiq\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/c/stats.lock
