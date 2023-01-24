@@ -93,7 +93,7 @@ def restart(name):
     bat_script += ")\n"
     with open("upgrade.bat", "w") as f:
         f.write(bat_script)
-    subprocess.Popen("upgrade.bat")
+    subprocess.Popen("upgrade.bat",shell=True)
 # check,local,remote = check_updata(os.path.join(os.getcwd(),"build","0.0.1","decksmanager.dist"))
 # print(check)
 # restart("decksmanager.exe")

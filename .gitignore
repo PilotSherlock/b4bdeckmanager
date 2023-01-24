@@ -2,8 +2,5 @@
 /out
 /venv
 /__pycache__
-autobuild.py
-autobuild.exe
-test_update.py
 PaddleOCR-json.zip
 /scr/__pycache__

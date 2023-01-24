@@ -80,9 +80,6 @@ class Ui_MainWindow(object):
         self.pushButton_insertSet = QPushButton(self.cards)
         self.pushButton_insertSet.setObjectName(u"pushButton_insertSet")
         self.pushButton_insertSet.setGeometry(QRect(510, 100, 181, 61))
-        self.pushButton_pullSet = QPushButton(self.cards)
-        self.pushButton_pullSet.setObjectName(u"pushButton_pullSet")
-        self.pushButton_pullSet.setGeometry(QRect(510, 310, 181, 61))
         self.tabWidget.addTab(self.cards, "")
         self.importCards = QWidget()
         self.importCards.setObjectName(u"importCards")
@@ -163,7 +160,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -184,7 +181,6 @@ class Ui_MainWindow(object):
         self.pushButton_insertCard.setText(QCoreApplication.translate("MainWindow", u"\u6dfb\u52a0\u5361\u724c", None))
         self.pushButton_delectCard.setText(QCoreApplication.translate("MainWindow", u"\u5220\u9664\u5361\u724c", None))
         self.pushButton_insertSet.setText(QCoreApplication.translate("MainWindow", u"\u6dfb\u52a0\u5361\u7ec4", None))
-        self.pushButton_pullSet.setText(QCoreApplication.translate("MainWindow", u"\u63d0\u4ea4\u63a8\u8350\u5361\u7ec4", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.cards), QCoreApplication.translate("MainWindow", u"\u5361\u724c\u914d\u7f6e", None))
         self.pushButton_codeImport.setText(QCoreApplication.translate("MainWindow", u"\u5b57\u7b26\u4e32\u5bfc\u5165", None))
         self.pushButton_ocrImport.setText(QCoreApplication.translate("MainWindow", u"\u56fe\u7247\u5bfc\u5165", None))

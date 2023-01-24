@@ -29,6 +29,7 @@ class Update_thread(QObject):
 class CardsManager(QMainWindow):
     def __init__(self,app):
         super().__init__()
+        self.version = "0.0.1.0"
         self.app=app
         self.cards = CardsSet()
         self.recommendCards = RecommendDeck().get_recommend_deck()
@@ -37,7 +38,10 @@ class CardsManager(QMainWindow):
         if os.path.isfile("upgrade.bat"):
             os.remove("upgrade.bat")
         #check updata
-        self.menu_check_update()
+        try:
+            self.check_update()
+        except:
+            pass
         #初始化数据
         self.init_data()
         #-------菜单--------------
@@ -47,6 +51,7 @@ class CardsManager(QMainWindow):
         self.ui.actioncheckDeck.triggered.connect(self.update_recommend_deck)
         #选择卡组
         self.ui.listWidget_cardSet.itemSelectionChanged.connect(self.update_listWidget_cards)
+        self.ui.listWidget_cardSet_recommend.itemSelectionChanged.connect(self.update_listWidget_recommend_cards)
         #添加卡组
         self.ui.pushButton_insertSet.clicked.connect(self.add_set)
         #删除卡组
@@ -109,18 +114,24 @@ class CardsManager(QMainWindow):
     #update recommend deck
     def update_recommend_deck(self):
         self.recommendCards = RecommendDeck().get_recommend_deck()
+        self.update_listWidget_recommend_cardSet()
+        self.ui.listWidget_cardSet_recommend.setCurrentRow(0)
+        self.update_listWidget_recommend_cards()
+        self.ui.listWidget_cards_recommend.setCurrentRow(0)
+        if self.recommendCards:
+            QMessageBox.information(self, "更新", "推荐卡组更新成功")
 
     #version info
     def get_version_info(self):
-        QMessageBox.information(self, "版本信息", "当前版本: 1.0.0.0")
+        QMessageBox.information(self, "版本信息", f"当前版本: {self.version}")
     #check_update
-    def menu_check_update(self):
+    def check_update(self):
         new,local,remote = check_updata(os.getcwd())
         if new is True:
             msg_check_update = QMessageBox()
             msg_check_update.setWindowTitle("更新")
             msg_check_update.setText("检测到新版本")
-            msg_check_update.addButton(QMessageBox.Ok).setText("确定")
+            msg_check_update.addButton(QMessageBox.Ok).setText("更新")
             msg_check_update.addButton(QMessageBox.Ignore).setText("忽略此版本")
             msg_check_update.addButton(QMessageBox.Cancel).setText("取消")
             ret = msg_check_update.exec()
@@ -136,6 +147,10 @@ class CardsManager(QMainWindow):
                 ignore_version(os.getcwd(),local,remote)
             new,local,remote = check_updata(os.getcwd())
         else:
+            return False
+
+    def menu_check_update(self):
+        if not self.check_update():
             QMessageBox.information(self,"更新","当前已是最新版本")
     #upgrade then restart new version
     def update_and_restar(self):

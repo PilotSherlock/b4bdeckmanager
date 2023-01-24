@@ -1,1 +1,1 @@
-{"version": "1.0.0.0", "code": "100", "file": [{"file": "decksmanager.exe", "md5": "d9768a0c24a8f011eebeb4cb1112a804", "name": "decksmanager.exe"}]}
+{"version": "0.0.2.0", "code": "2", "file": [{"file": "decksmanager.exe", "md5": "7015650db46e5dad4bb0daade2b1822d", "name": "decksmanager.exe"}, {"file": "version.json", "md5": "cbfd3295075ee8d46b3dc5c3f0bab0cc", "name": "version.json"}]}

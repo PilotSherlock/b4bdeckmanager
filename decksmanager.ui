@@ -22,7 +22,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="cards">
        <attribute name="title">
@@ -147,19 +147,6 @@
         </property>
         <property name="text">
          <string>添加卡组</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_pullSet">
-        <property name="geometry">
-         <rect>
-          <x>510</x>
-          <y>310</y>
-          <width>181</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>提交推荐卡组</string>
         </property>
        </widget>
       </widget>
