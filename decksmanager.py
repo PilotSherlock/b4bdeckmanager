@@ -4,7 +4,7 @@ import os
 import shutil
 
 from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication
-from PySide6.QtCore import QUrl
+from PySide6.QtCore import QUrl,QObject,Signal,Slot,QThread
 from PySide6.QtGui import QDesktopServices
 import ui_decksmanager
 
@@ -13,18 +13,34 @@ from scr.cards import CardsSet
 from scr.screenshot import ScreenShotsWin
 from scr.importingame import AutoImport
 from scr.paddleocr import Ocr
+from scr.update import *
+
+#update_thread
+class Update_thread(QObject):
+    finished = Signal()
+
+    @Slot()
+    def update(self):
+        new,local,remote = check_updata(os.getcwd())
+        update_onefile(os.getcwd(),local,remote)
+        print("update done!")
+        self.finished.emit()
 
 class CardsManager(QMainWindow):
-    def __init__(self):
+    def __init__(self,app):
         super().__init__()
+        self.app=app
         self.cards = CardsSet()
         self.ui = ui_decksmanager.Ui_MainWindow()
         self.ui.setupUi(self)
+        if os.path.isfile("upgrade.bat"):
+            os.remove("upgrade.bat")
         #初始化数据
         self.init_data()
         #-------菜单--------------
-        self.ui.action_info.triggered.connect(lambda: QMessageBox.information(None, "Info", "This is an information message"))
+        self.ui.action_info.triggered.connect(self.get_version_info)
         self.ui.actionGithub.triggered.connect(lambda: QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager")))
+        self.ui.actioncheck.triggered.connect(self.menu_check_update)
         #选择卡组
         self.ui.listWidget_cardSet.itemSelectionChanged.connect(self.update_listWidget_cards)
         #添加卡组
@@ -66,7 +82,46 @@ class CardsManager(QMainWindow):
         self.update_listWidget_cards()
         self.ui.listWidget_cards.setCurrentRow(0)
 
+    #version info
+    def get_version_info(self):
+        QMessageBox.information(self, "版本信息", "当前版本: 0.0.0.1")
+    #check_update
+    def menu_check_update(self):
+        new,local,remote = check_updata(os.getcwd())
+        if new is True:
+            msg_check_update = QMessageBox()
+            msg_check_update.setWindowTitle("更新")
+            msg_check_update.setText("检测到新版本")
+            msg_check_update.addButton(QMessageBox.Ok).setText("确定")
+            msg_check_update.addButton(QMessageBox.Ignore).setText("忽略此版本")
+            msg_check_update.addButton(QMessageBox.Cancel).setText("取消")
+            ret = msg_check_update.exec()
+            if ret == QMessageBox.Ok:
+                self.thread = QThread()
+                self.worker = Update_thread()
+                self.worker.moveToThread(self.thread)
+                self.worker.finished.connect(self.thread.quit)
+                self.worker.finished.connect(self.update_and_restar)
+                self.thread.started.connect(self.worker.update)
+                self.thread.start()
+            elif ret == QMessageBox.Ignore:
+                ignore_version(os.getcwd(),local,remote)
+            new,local,remote = check_updata(os.getcwd())
+        else:
+            QMessageBox.information(self,"更新","当前已是最新版本")
 
+    def update_and_restar(self):
+        msg_restart = QMessageBox()
+        msg_restart.setWindowTitle("更新")
+        msg_restart.setText("新版本下载完成,软件将重启更新")
+        msg_restart.addButton(QMessageBox.Ok).setText("确定")
+        ret = msg_restart.exec()
+        if ret == QMessageBox.Ok:
+            restart("decksmanager.exe")
+            self.app.exit()
+        else:
+            restart("decksmanager.exe")
+            self.app.exit()
     #删除卡组
     def delect_set(self):
         try:
@@ -185,6 +240,6 @@ class CardsManager(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    widget = CardsManager()
+    widget = CardsManager(app)
     widget.show()
     sys.exit(app.exec())

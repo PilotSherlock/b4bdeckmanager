@@ -1,6 +1,7 @@
 import json
 import os
 import codecs
+import requests
 
 class CardsSet():
     def __init__(self):
@@ -18,3 +19,7 @@ class CardsSet():
     def update(self):
         with codecs.open('data/cardSet.json',"w","utf-8") as file:
             json.dump(self.cards,file,ensure_ascii=False)
+
+# class RecommendDeck():
+#     def __init__(self):
+#         self.deck = requests.get(url+ '/' + "version.json")
