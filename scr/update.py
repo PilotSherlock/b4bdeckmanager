@@ -76,18 +76,6 @@ def update_onefile(local_path,local_version_info,remote_version_info,url=url):
 
 def restart(name):
     update_name = name+".update"
-    # bat_script = "@echo off\n"
-    # bat_script += "if exist " + name + " (\n"
-    # bat_script += "    timeout /t 5\n"
-    # bat_script += "    del " + name + "\n"
-    # bat_script += "    ren " + update_name + " " + name + "\n"
-    # bat_script += "    start " + name + "\n"
-    # bat_script += "    exit\n"
-    # bat_script += ") else (\n"
-    # bat_script += "    echo \"" + name + " file not found, exiting...\"\n"
-    # bat_script += "    exit\n"
-    # bat_script += ")\n"
-
     bat_script = "@echo off\n"
     bat_script += "if exist " + name + " (\n"
     bat_script += "    if exist " + update_name + " (\n"

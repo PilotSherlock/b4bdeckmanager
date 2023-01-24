@@ -13,8 +13,8 @@ from scr.cards import CardsSet
 from scr.screenshot import ScreenShotsWin
 from scr.importingame import AutoImport
 from scr.paddleocr import Ocr
-from scr.update import *
-
+from scr.update import update_onefile,check_updata,restart,ignore_version
+from scr.recommenddeck import RecommendDeck
 #update_thread
 class Update_thread(QObject):
     finished = Signal()
@@ -31,16 +31,20 @@ class CardsManager(QMainWindow):
         super().__init__()
         self.app=app
         self.cards = CardsSet()
+        self.recommendCards = RecommendDeck().get_recommend_deck()
         self.ui = ui_decksmanager.Ui_MainWindow()
         self.ui.setupUi(self)
         if os.path.isfile("upgrade.bat"):
             os.remove("upgrade.bat")
+        #check updata
+        self.menu_check_update()
         #初始化数据
         self.init_data()
         #-------菜单--------------
         self.ui.action_info.triggered.connect(self.get_version_info)
         self.ui.actionGithub.triggered.connect(lambda: QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager")))
         self.ui.actioncheck.triggered.connect(self.menu_check_update)
+        self.ui.actioncheckDeck.triggered.connect(self.update_recommend_deck)
         #选择卡组
         self.ui.listWidget_cardSet.itemSelectionChanged.connect(self.update_listWidget_cards)
         #添加卡组
@@ -75,16 +79,40 @@ class CardsManager(QMainWindow):
         except:
             pass
 
+    def update_listWidget_recommend_cardSet(self):
+        try:
+            self.ui.listWidget_cardSet_recommend.clear()
+            self.ui.listWidget_cardSet_recommend.addItems(self.recommendCards.keys())
+        except:
+            pass
+
+    def update_listWidget_recommend_cards(self):
+        try:
+            currentSet = self.ui.listWidget_cardSet_recommend.currentItem().text()
+            self.ui.listWidget_cards_recommend.clear()
+            self.ui.listWidget_cards_recommend.addItems(self.recommendCards[currentSet]['deck'])
+            self.ui.textBrowser_author.setPlainText(self.recommendCards[currentSet]['author'])
+            self.ui.textBrowser_deck_info.setPlainText(self.recommendCards[currentSet]['info'])
+            self.ui.textBrowser_game_version.setPlainText(self.recommendCards[currentSet]['version'])
+        except:
+            pass
     #初始化显示数据
     def init_data(self):
         self.update_listWidget_cardSet()
         self.ui.listWidget_cardSet.setCurrentRow(0)
         self.update_listWidget_cards()
         self.ui.listWidget_cards.setCurrentRow(0)
+        self.update_listWidget_recommend_cardSet()
+        self.ui.listWidget_cardSet_recommend.setCurrentRow(0)
+        self.update_listWidget_recommend_cards()
+        self.ui.listWidget_cards_recommend.setCurrentRow(0)
+    #update recommend deck
+    def update_recommend_deck(self):
+        self.recommendCards = RecommendDeck().get_recommend_deck()
 
     #version info
     def get_version_info(self):
-        QMessageBox.information(self, "版本信息", "当前版本: 0.0.0.1")
+        QMessageBox.information(self, "版本信息", "当前版本: 1.0.0.0")
     #check_update
     def menu_check_update(self):
         new,local,remote = check_updata(os.getcwd())
@@ -109,7 +137,7 @@ class CardsManager(QMainWindow):
             new,local,remote = check_updata(os.getcwd())
         else:
             QMessageBox.information(self,"更新","当前已是最新版本")
-
+    #upgrade then restart new version
     def update_and_restar(self):
         msg_restart = QMessageBox()
         msg_restart.setWindowTitle("更新")
@@ -122,6 +150,7 @@ class CardsManager(QMainWindow):
         else:
             restart("decksmanager.exe")
             self.app.exit()
+
     #删除卡组
     def delect_set(self):
         try:
@@ -237,6 +266,14 @@ class CardsManager(QMainWindow):
             auto.importCard()
         except:
             pass
+    def importTogame_recommend(self):
+        try:
+            currentCardSet = self.ui.listWidget_cardSet_recommend.currentItem().text()
+            auto = AutoImport(currentCardSet,self.recommendCards[currentCardSet]['deck'])
+            auto.importCard()
+        except:
+            pass
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
