@@ -145,8 +145,10 @@ class CardsManager(QMainWindow):
                 self.thread.start()
             elif ret == QMessageBox.Ignore:
                 ignore_version(os.getcwd(),local,remote)
-            new,local,remote = check_updata(os.getcwd())
-        else:
+            else:
+                return True
+            # new,local,remote = check_updata(os.getcwd())
+        elif new is False:
             return False
 
     def menu_check_update(self):
