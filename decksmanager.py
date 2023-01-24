@@ -29,7 +29,7 @@ class Update_thread(QObject):
 class CardsManager(QMainWindow):
     def __init__(self,app):
         super().__init__()
-        self.version = "0.0.1.0"
+        self.version = "0.0.1.1"
         self.app=app
         self.cards = CardsSet()
         self.recommendCards = RecommendDeck().get_recommend_deck()
@@ -70,6 +70,7 @@ class CardsManager(QMainWindow):
         self.ui.pushButton_ocrImport.clicked.connect(self.screenshot)
         #导入游戏
         self.ui.pushButton_importInGame.clicked.connect(self.importTogame)
+        self.ui.pushButton_importInGame_recommend.clicked.connect(self.importTogame_recommend)
 
     #数据框更新
     def update_listWidget_cardSet(self):
