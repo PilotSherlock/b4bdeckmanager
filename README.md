@@ -13,8 +13,8 @@
 >> **支持一键导入游戏**  
 >> **目前仅仅支持16:9分辨率且小于等于1920*1080**  
 >> **导入游戏前请把分辨率改为16:9 小于1920*1080 窗口化/无边框**  
->> ![image](https://user-images.githubusercontent.com/42969918/213933607-f2fe98ef-a85c-4f5a-9aaa-5c0e91509380.png)  
->> ![image](https://user-images.githubusercontent.com/42969918/213933620-8f357bec-953e-454e-a91c-a77a9995d044.png)  
+>> ![image](https://user-images.githubusercontent.com/42969918/214327184-a39095af-cccf-459c-ac59-7c6950c33c1c.png)  
+>> ![image](https://user-images.githubusercontent.com/42969918/214327251-daee32e8-3eac-4d98-a356-ced47280c5c8.png)  
 
 > # 打包  
 > **此软件使用nuitka打包**  
