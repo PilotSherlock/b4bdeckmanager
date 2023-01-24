@@ -5,7 +5,10 @@
 > ## 2：通过OCR识别卡组导入  
 >> **OCR功能需要使用到PaddleOCR-json模块，请先下载PaddleOCR-json.zip到decksmanager.exe下**  
 >> **或者下载包含PaddleOCR-json的zip**  
->> **[PaddleOCR-json库](https://github.com/hiroi-sora/PaddleOCR-json)** 
+[下载带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.0/b4bdeckmanager_v0.0.1.0_OCR.zip)  
+[下载不带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.0/b4bdeckmanager_v0.0.1.0_withoutOCR.zip)  
+[下载PaddleOCR-json.zip](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/PaddleOCR-json/PaddleOCR-json.zip)   
+[PaddleOCR-json库](https://github.com/hiroi-sora/PaddleOCR-json)  
 > ## 3: 导入卡组到游戏  
 >> **支持一键导入游戏**  
 >> **目前仅仅支持16:9分辨率且小于等于1920*1080**  
@@ -23,3 +26,6 @@
 >>> + **--update_code         [更新代码，一般为版本号的倒数第二位 eg: 0.0.1.0 update_code为1]**  
 >>> + **--release         [打包到release文件夹内，用于上传到github更新版本，通常跟--other --onefile一起使用]**  
 >>> + **--other         [nuitka的其他参数，eg: --onefile]**  
+
+> # 支持
+>> **使用了[hiroi-sora](https://github.com/hiroi-sora)的[PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
