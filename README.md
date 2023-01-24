@@ -5,8 +5,8 @@
 > ## 2：通过OCR识别卡组导入  
 >> **OCR功能需要使用到PaddleOCR-json模块，请先下载PaddleOCR-json.zip到decksmanager.exe下**  
 >> **或者下载包含PaddleOCR-json的zip**  
-[下载带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.0/b4bdeckmanager_v0.0.1.0_OCR.zip)  
-[下载不带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.0/b4bdeckmanager_v0.0.1.0_withoutOCR.zip)  
+[下载带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_OCR.zip)  
+[下载不带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_withoutOCR.zip)  
 [下载PaddleOCR-json.zip](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/PaddleOCR-json/PaddleOCR-json.zip)   
 [PaddleOCR-json库](https://github.com/hiroi-sora/PaddleOCR-json)  
 > ## 3: 导入卡组到游戏  
