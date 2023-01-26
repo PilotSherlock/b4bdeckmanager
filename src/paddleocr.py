@@ -1,4 +1,4 @@
-from scr.ppocr import PPOCR
+from src.ppocr import PPOCR
 
 class Ocr(PPOCR):
     def __init__(self):

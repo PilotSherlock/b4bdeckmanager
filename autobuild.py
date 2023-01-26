@@ -26,6 +26,8 @@ def save_version_info(directory, version_code, update_code):
 
 
 def package_python_program():
+    def package_python_program():
+    def package_python_program():
     parser = argparse.ArgumentParser()
     parser.add_argument("--debug", help="Whether to run the script in debug mode", action="store_true")
     parser.add_argument("--version_code", help="The version code of the program", default="0.0.0")
