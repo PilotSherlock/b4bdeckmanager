@@ -33,7 +33,7 @@ def calculate_md5(directory):
     return file_list
 
 # Get the version information from the local version.json file
-def check_updata(local_path,url=url):
+def check_update(local_path,url=url):
     with open(os.path.join(local_path,"version.json"), "r") as f:
         local_version_info = json.load(f)
 
@@ -55,7 +55,7 @@ def update(local_path,local_version_info,remote_version_info,url=url):
             if not os.path.exists(local_file_path) or file["md5"] != calculate_md5(local_file_path):
                 # print(local_file_path)
                 # Download the file from the remote repository
-                download_file(url + '/' + remote_file_path,local_file_path)
+                download_file(url + '/' + remote_file_path,os.path.join(local_file_path,"update_cache"))
                 #update the local version.json file to match the remote version
         with open(os.path.join(local_path, "version.json"), "w") as f:
             json.dump(remote_version_info, f)
@@ -74,26 +74,5 @@ def update_onefile(local_path,local_version_info,remote_version_info,url=url):
         with open(os.path.join(local_path, "version.json"), "w") as f:
             json.dump(remote_version_info, f)
 
-def restart(name):
-    update_name = name+".update"
-    bat_script = "@echo off\n"
-    bat_script += "if exist " + name + " (\n"
-    bat_script += "    if exist " + update_name + " (\n"
-    bat_script += "        timeout /t 3\n"
-    bat_script += "        del " + name + "\n"
-    bat_script += "        ren " + update_name + " " + name + "\n"
-    bat_script += "        start " + name + "\n"
-    bat_script += "    ) else (\n"
-    bat_script += "        echo \"" + update_name + " file not found, exiting...\"\n"
-    bat_script += "        exit\n"
-    bat_script += "    )\n"
-    bat_script += ") else (\n"
-    bat_script += "    echo \"" + name + " file not found, exiting...\"\n"
-    bat_script += "    exit\n"
-    bat_script += ")\n"
-    with open("upgrade.bat", "w") as f:
-        f.write(bat_script)
-    subprocess.Popen("upgrade.bat",shell=True)
-# check,local,remote = check_updata(os.path.join(os.getcwd(),"build","0.0.1","decksmanager.dist"))
-# print(check)
-# restart("decksmanager.exe")
+def restart():
+    subprocess.Popen("update.exe")

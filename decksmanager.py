@@ -3,17 +3,19 @@ import json
 import os
 import shutil
 
-from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication
+import requests
+from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication,QDialog
 from PySide6.QtCore import QUrl,QObject,Signal,Slot,QThread,QTranslator,QCoreApplication
 from PySide6.QtGui import QDesktopServices,QActionGroup,QAction
 import ui.ui_decksmanager as ui_decksmanager
+import ui.ui_pushdeck as ui_pushdeck
 
 
 from src.cards import CardsSet
 from src.screenshot import ScreenShotsWin
 from src.importingame import AutoImport
 from src.paddleocr import Ocr
-from src.update import update_onefile,check_updata,restart,ignore_version
+from src.update import update,check_update,restart,ignore_version,download_file
 from src.recommenddeck import RecommendDeck
 
 TRANSLATOR = QTranslator()
@@ -23,32 +25,49 @@ class Update_thread(QObject):
 
     @Slot()
     def update(self):
-        new,local,remote = check_updata(os.getcwd())
-        update_onefile(os.getcwd(),local,remote)
+        new,local,remote = check_update(os.getcwd())
+        update(os.getcwd(),local,remote)
         print("update done!")
         self.finished.emit()
 
 class CardsManager(QMainWindow):
+    #信号 向推荐卡组的子窗口传参tuple(卡组名字,[卡组])/signal
+    signal_current_deck = Signal(tuple)
     def __init__(self,app):
         super().__init__()
-        self.version = "0.0.1.1"
+        self.version = "1.0.1.1"
         self.app=app
         self.cards = CardsSet()
-        self.recommendCards = RecommendDeck().get_recommend_deck()
         self.ui = ui_decksmanager.Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_config()
-        if os.path.isfile("upgrade.bat"):
-            os.remove("upgrade.bat")
+        self.recommendCards = RecommendDeck().get_recommend_deck(self.config['language'])
+        #子窗口/subwindows
+        self.subwindow_push_deck = Window_push_deck()
+        #如果有下载好的本地更新文件寻求重启更新/if there is a update file in local,ask if restart to update
+        if os.path.isdir("update_cache"):
+            msg_new_version_file = QMessageBox()
+            msg_new_version_file.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
+            msg_new_version_file.setText(QCoreApplication.translate("MessageBox","本地有下载完成的新版本,确认重启软件进行更新",None))
+            msg_new_version_file.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","确定",None))
+            msg_new_version_file.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
+            ret = msg_new_version_file.exec()
+            if ret == QMessageBox.Ok:
+                restart()
+                self.app.exit()
+        #检测本地是否有更新器/check is exist update.exe
+        if not os.path.isfile("update.exe"):
+            download_file("https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/update.exe",os.getcwd())
+
         #语言选择/select language
         self.languageActionGroup = QActionGroup(self.ui.menu_3)
         self.languageActionGroup.addAction(self.ui.actionChinese)
         self.languageActionGroup.addAction(self.ui.actionEnglish)
         self.languageActionGroup.triggered[QAction].connect(self.select_language)
-
-        #启动检查更新/check updata
+        self.languageActionGroup.triggered[QAction].connect(self.update_recommend_deck_without_messagebox)
+        #启动检查更新/check update
         try:
-            self.check_update()
+            self.main_check_update()
         except:
             pass
         #初始化数据/init data
@@ -73,14 +92,16 @@ class CardsManager(QMainWindow):
         self.ui.pushButton_deletCard.clicked.connect(self.delet_card)
         #生成分享码/share by str
         self.ui.pushButton_shareCode.clicked.connect(self.share)
-        #分享码导入/import by str
+        #分享码导入/import by strcheck_update
         self.ui.pushButton_codeImport.clicked.connect(self.importByshare)
         #截图导入/import by ovr
         self.ui.pushButton_ocrImport.clicked.connect(self.screenshot)
         #导入游戏/apply in game
         self.ui.pushButton_importInGame.clicked.connect(self.importTogame)
         self.ui.pushButton_importInGame_recommend.clicked.connect(self.importTogame_recommend)
-
+        #推送推荐卡组
+        self.ui.pushButton_recommend.clicked.connect(self.push_deck)
+        self.signal_current_deck.connect(self.subwindow_push_deck.get_signal_from_mainwindow)
     def init_config(self):
         if not os.path.isfile("config.json"):
             with open("config.json","w") as cf:
@@ -118,9 +139,13 @@ class CardsManager(QMainWindow):
             currentSet = self.ui.listWidget_cardSet_recommend.currentItem().text()
             self.ui.listWidget_cards_recommend.clear()
             self.ui.listWidget_cards_recommend.addItems(self.recommendCards[currentSet]['deck'])
+            self.ui.textBrowser_author.clear()
             self.ui.textBrowser_author.setPlainText(self.recommendCards[currentSet]['author'])
+            self.ui.textBrowser_deck_info.clear()
             self.ui.textBrowser_deck_info.setPlainText(self.recommendCards[currentSet]['info'])
+            self.ui.textBrowser_game_version.clear()
             self.ui.textBrowser_game_version.setPlainText(self.recommendCards[currentSet]['version'])
+            self.ui.textBrowser_game_difficulty.setPlainText(self.recommendCards[currentSet]['difficulty'])
         except:
             pass
     #初始化显示数据/init data
@@ -135,21 +160,28 @@ class CardsManager(QMainWindow):
         self.ui.listWidget_cards_recommend.setCurrentRow(0)
     #update recommend deck
     def update_recommend_deck(self):
-        self.recommendCards = RecommendDeck().get_recommend_deck()
+        self.recommendCards = RecommendDeck().get_recommend_deck(self.config['language'])
         self.update_listWidget_recommend_cardSet()
         self.ui.listWidget_cardSet_recommend.setCurrentRow(0)
         self.update_listWidget_recommend_cards()
         self.ui.listWidget_cards_recommend.setCurrentRow(0)
         if self.recommendCards:
             QMessageBox.information(self,QCoreApplication.translate("MessageBox","更新",None),QCoreApplication.translate("MessageBox","推荐卡组更新成功",None))
+    def update_recommend_deck_without_messagebox(self):
+        self.recommendCards = RecommendDeck().get_recommend_deck(self.config['language'])
+        self.update_listWidget_recommend_cardSet()
+        self.ui.listWidget_cardSet_recommend.setCurrentRow(0)
+        self.update_listWidget_recommend_cards()
+        self.ui.listWidget_cards_recommend.setCurrentRow(0)
+
 
     #版本信息的弹窗/version info
     def get_version_info(self):
         QMessageBox.information(self,QCoreApplication.translate("MessageBox","版本信息",None),self.version)
 
-    #检查时候有新版本/check_update
-    def check_update(self):
-        new,local,remote = check_updata(os.getcwd())
+    #检查是否有新版本/check_update
+    def main_check_update(self):
+        new,local,remote = check_update(os.getcwd())
         if new is True:
             msg_check_update = QMessageBox()
             msg_check_update.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
@@ -170,12 +202,12 @@ class CardsManager(QMainWindow):
                 ignore_version(os.getcwd(),local,remote)
             else:
                 return True
-            # new,local,remote = check_updata(os.getcwd())
+            # new,local,remote = check_update(os.getcwd())
         elif new is False:
             return False
 
     def menu_check_update(self):
-        if not self.check_update():
+        if not self.main_check_update():
             QMessageBox.information(self,QCoreApplication.translate("MessageBox","更新",None),QCoreApplication.translate("MessageBox","当前已是最新版本",None))
     #更新软件重启/upgrade then restart new version
     def update_and_restar(self):
@@ -183,12 +215,10 @@ class CardsManager(QMainWindow):
         msg_restart.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
         msg_restart.setText(QCoreApplication.translate("MessageBox","新版本下载完成,软件将重启更新",None))
         msg_restart.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","确定",None))
+        msg_restart.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
         ret = msg_restart.exec()
         if ret == QMessageBox.Ok:
-            restart("decksmanager.exe")
-            self.app.exit()
-        else:
-            restart("decksmanager.exe")
+            restart()
             self.app.exit()
 
     #删除卡组
@@ -326,9 +356,48 @@ class CardsManager(QMainWindow):
                 self.config['language'] = "cn_zh"
                 json.dump(self.config,cf)
         self.ui.retranslateUi(self)
+    #推送推荐卡组
+    def push_deck(self):
+        deck = (self.ui.listWidget_cardSet.currentItem().text(),self.cards.cards[self.ui.listWidget_cardSet.currentItem().text()])
+        self.signal_current_deck.emit(deck)
+        self.subwindow_push_deck.show()
 
 
+    #关闭/close event
+    def closeEvent(self, event):
+        sys.exit(0)
 
+
+class Window_push_deck(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = ui_pushdeck.Ui_Dialog_push_deck()
+        self.ui.setupUi(self)
+        self.ui.pushButton_importInGame_recommend.clicked.connect(self.push_deck)
+
+        with open("config.json","r") as cf:
+            self.config = json.load(cf)
+
+    def get_signal_from_mainwindow(self,deck):
+        self.deck = deck
+
+
+    def push_deck(self):
+        rezult = {}
+        rezult["name"] = self.deck[0]
+        if not self.ui.textEdit_author.toPlainText() == "" and not self.ui.textEdit_deck_info.toPlainText() == "" and not self.ui.textEdit_game_version.toPlainText() == "":
+            rezult["data"] = {"deck":self.deck[1],"author":self.ui.textEdit_author.toPlainText(),"info":self.ui.textEdit_deck_info.toPlainText(),"version":self.ui.textEdit_game_version.toPlainText(),"difficulty":self.ui.comboBox_difficulty.currentText(),"language":self.config['language']}
+            respons = requests.post("https://sherlock117.com:8001/share",data=json.dumps(rezult)).json()
+            try:
+                if respons["code"] == 1:
+                    QMessageBox.information(self,QCoreApplication.translate("MessageBox","信息",None),QCoreApplication.translate("MessageBox","分享成功,等待审核",None))
+                elif respons["code"] == 2:
+                    QMessageBox.information(self,QCoreApplication.translate("MessageBox","信息",None),QCoreApplication.translate("MessageBox","分享失败:卡组名存在,请换一个名字",None))
+            except:
+                QMessageBox.information(self,QCoreApplication.translate("MessageBox","信息",None),QCoreApplication.translate("MessageBox","分享失败:{}".format(respons["message"]),None))
+            self.close()
+        else:
+            QMessageBox.information(self,QCoreApplication.translate("MessageBox","信息",None),QCoreApplication.translate("MessageBox","请填写数据",None))
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.installTranslator(TRANSLATOR)
