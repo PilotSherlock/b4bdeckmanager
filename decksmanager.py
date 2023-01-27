@@ -57,7 +57,7 @@ class CardsManager(QMainWindow):
                 self.app.exit()
         #检测本地是否有更新器/check is exist update.exe
         if not os.path.isfile("update.exe"):
-            download_file("https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/update.exe",os.getcwd())
+            download_file("https://github.com/PilotSherlock/b4bdeckmanager/raw/test/update.exe",os.path.join(os.getcwd(),"update.exe"))
 
         #语言选择/select language
         self.languageActionGroup = QActionGroup(self.ui.menu_3)
@@ -356,11 +356,15 @@ class CardsManager(QMainWindow):
                 self.config['language'] = "cn_zh"
                 json.dump(self.config,cf)
         self.ui.retranslateUi(self)
+        self.subwindow_push_deck.ui.retranslateUi(self.subwindow_push_deck)
     #推送推荐卡组
     def push_deck(self):
-        deck = (self.ui.listWidget_cardSet.currentItem().text(),self.cards.cards[self.ui.listWidget_cardSet.currentItem().text()])
-        self.signal_current_deck.emit(deck)
-        self.subwindow_push_deck.show()
+        try:
+            deck = (self.ui.listWidget_cardSet.currentItem().text(),self.cards.cards[self.ui.listWidget_cardSet.currentItem().text()])
+            self.signal_current_deck.emit(deck)
+            self.subwindow_push_deck.show()
+        except:
+            pass
 
 
     #关闭/close event
@@ -373,7 +377,7 @@ class Window_push_deck(QDialog):
         super().__init__()
         self.ui = ui_pushdeck.Ui_Dialog_push_deck()
         self.ui.setupUi(self)
-        self.ui.pushButton_importInGame_recommend.clicked.connect(self.push_deck)
+        self.ui.pushButton_importInGame_recommend.clicked.connect(self.push)
 
         with open("config.json","r") as cf:
             self.config = json.load(cf)
@@ -382,7 +386,7 @@ class Window_push_deck(QDialog):
         self.deck = deck
 
 
-    def push_deck(self):
+    def push(self):
         rezult = {}
         rezult["name"] = self.deck[0]
         if not self.ui.textEdit_author.toPlainText() == "" and not self.ui.textEdit_deck_info.toPlainText() == "" and not self.ui.textEdit_game_version.toPlainText() == "":
