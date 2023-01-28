@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>B4B卡牌管理工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon/icon.ico</normaloff>../icon/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="cards">
+       <attribute name="title">
+        <string>卡牌配置</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_cardSet">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>181</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_importInGame">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>30</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>导入游戏</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_deletSet">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>170</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除卡组</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_shareCode">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>450</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>生成分享字符串</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_renameSet">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>240</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>重命名</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_insertCard">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>400</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加卡牌</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_deletCard">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>400</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除卡牌</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget_cards">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>30</y>
+          <width>256</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_insertSet">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>100</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加卡组</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_recommend">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>320</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>推荐卡牌</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="importCards">
+       <attribute name="title">
+        <string>导入卡牌配置</string>
+       </attribute>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>697</width>
+          <height>252</height>
+         </rect>
+        </property>
+        <widget class="QTextEdit" name="textEdit_shareCode">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>681</width>
+           <height>111</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_codeImport">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>140</y>
+           <width>301</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>字符串导入</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>270</y>
+          <width>697</width>
+          <height>252</height>
+         </rect>
+        </property>
+        <widget class="QPushButton" name="pushButton_ocrImport">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>70</y>
+           <width>301</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>图片导入</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="recommend">
+       <attribute name="title">
+        <string>推荐卡组</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_cardSet_recommend">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>181</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget_cards_recommend">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>256</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_importInGame_recommend">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>430</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>导入游戏</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_author">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>30</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_author">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>0</y>
+          <width>53</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;作者&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_game_version">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>100</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_deck_info">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>260</y>
+          <width>241</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_game_version">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>70</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;适用游戏版本&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_deck_info">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>220</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;卡组说明&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_game_difficulty">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>140</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;适用难度&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_game_difficulty">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>180</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>739</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionGithub"/>
+    <addaction name="action_info"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>更新</string>
+    </property>
+    <addaction name="actioncheck"/>
+    <addaction name="actioncheckDeck"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>语言</string>
+    </property>
+    <addaction name="actionChinese"/>
+    <addaction name="actionEnglish"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>图片导入设置</string>
+   </property>
+  </action>
+  <action name="info">
+   <property name="text">
+    <string>信息</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="text">
+    <string>Github</string>
+   </property>
+  </action>
+  <action name="action_info">
+   <property name="text">
+    <string>信息</string>
+   </property>
+  </action>
+  <action name="actioncheck">
+   <property name="text">
+    <string>检查更新</string>
+   </property>
+  </action>
+  <action name="actioncheckDeck">
+   <property name="text">
+    <string>更新牌组</string>
+   </property>
+  </action>
+  <action name="actionChinese">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>简体中文</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>textEdit_shareCode</tabstop>
+  <tabstop>listWidget_cardSet</tabstop>
+  <tabstop>listWidget_cards</tabstop>
+  <tabstop>pushButton_importInGame</tabstop>
+  <tabstop>pushButton_insertSet</tabstop>
+  <tabstop>pushButton_deletSet</tabstop>
+  <tabstop>pushButton_renameSet</tabstop>
+  <tabstop>pushButton_recommend</tabstop>
+  <tabstop>pushButton_insertCard</tabstop>
+  <tabstop>pushButton_deletCard</tabstop>
+  <tabstop>pushButton_shareCode</tabstop>
+  <tabstop>pushButton_codeImport</tabstop>
+  <tabstop>pushButton_ocrImport</tabstop>
+  <tabstop>listWidget_cardSet_recommend</tabstop>
+  <tabstop>listWidget_cards_recommend</tabstop>
+  <tabstop>textBrowser_author</tabstop>
+  <tabstop>textBrowser_game_version</tabstop>
+  <tabstop>textBrowser_game_difficulty</tabstop>
+  <tabstop>textBrowser_deck_info</tabstop>
+  <tabstop>pushButton_importInGame_recommend</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

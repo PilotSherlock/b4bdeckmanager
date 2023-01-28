@@ -5,3 +5,6 @@
 PaddleOCR-json.zip
 /scr/__pycache__
 /version
+*.ts
+test.py
+update.py

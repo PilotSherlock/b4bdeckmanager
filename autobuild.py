@@ -3,6 +3,7 @@ import hashlib
 import json
 import subprocess
 import argparse
+import shutil
 def calculate_md5(directory):
     file_list = []
     for root, dirs, files in os.walk(directory):
@@ -62,10 +63,10 @@ def package_python_program():
         if not args.update_code:
             parser.error("The update_code parameter is required")
     if args.releases:
-        nuitka_options = f"--standalone --windows-icon-from-ico=ico.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build/releases/ --windows-file-version={args.version_code} --mingw64 --follow-import-to=scr" + " " +args.other
+        nuitka_options = f"--standalone --windows-icon-from-ico=icon/icon.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build/releases/ --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " +args.other
         output_file = os.path.join("build","releases","decksmanager.dist")
     else:
-        nuitka_options = f"--standalone --windows-icon-from-ico=ico.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build\{args.version_code} --windows-file-version={args.version_code} --mingw64 --follow-import-to=scr" + " " + args.other
+        nuitka_options = f"--standalone --windows-icon-from-ico=icon/icon.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build\{args.version_code} --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " + args.other
         output_file = os.path.join("build",args.version_code,"decksmanager.dist")
     if not args.debug:
         nuitka_options += " --windows-disable-console"
@@ -73,6 +74,13 @@ def package_python_program():
         nuitka_options += " --onefile"
     # Use Nuitka to package the Python program
     subprocess.run(["powershell", "nuitka", nuitka_options, "decksmanager.py"])
+    try:
+        if args.releases:
+            shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build","releases","language"))
+        else:
+            shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build",args.version_code,"language"))
+    except:
+        pass
 
     save_version_info(output_file, args.version_code, args.update_code)
     save_version_info(os.path.dirname(output_file), args.version_code, args.update_code)
