@@ -6,7 +6,7 @@ import re
 
 import requests
 from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication,QDialog
-from PySide6.QtCore import QUrl,QObject,Signal,Slot,QThread,QTranslator,QCoreApplication
+from PySide6.QtCore import QUrl,Signal,QTranslator,QCoreApplication
 from PySide6.QtGui import QDesktopServices,QActionGroup,QAction
 import ui.ui_decksmanager as ui_decksmanager
 import ui.ui_pushdeck as ui_pushdeck
@@ -44,7 +44,7 @@ class CardsManager(QMainWindow):
         self.languageActionGroup.triggered[QAction].connect(self.update_recommend_deck_without_messagebox)
         #启动检查更新/check update
         try:
-            self.check_update()
+            self.check_update(0)
         except:
             pass
         #初始化数据/init data
@@ -82,7 +82,7 @@ class CardsManager(QMainWindow):
     def init_config(self):
         if not os.path.isfile("config.json"):
             with open("config.json","w") as cf:
-                self.config = {"language":"cn_zh"}
+                self.config = {"language":"cn_zh","ignore_version":"0.0.0"}
                 json.dump(self.config ,cf,ensure_ascii=False)
         else:
             with open("config.json","r") as cf:
@@ -161,28 +161,42 @@ class CardsManager(QMainWindow):
         url_cn_zh ="https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_cn_zh.md"
         url_en = "https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_en.md"
         response_latest_version = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
-        if self.config['language'] == "en":
-            response_update_log= requests.get(url_en).text
-        else:
-            response_update_log= requests.get(url_cn_zh).text
-        latest_version = response_latest_version['tag_name'].split("v")[1]
-        pattern = re.compile(r'## V(.*?) ')
-        versions = pattern.findall(response_update_log)
-        log_latest_version = max(versions)
-
-        log_start = response_update_log.index(f'## V{log_latest_version}')
         try:
-            log_end = response_update_log.index(f'## V', log_start+1)
-        except:
-            log_end = len(response_update_log)
-        latest_version_infromation = response_update_log[log_start:len(response_update_log)]
-        if latest_version > self.version:
-            ret = QMessageBox.information(self,f"V{latest_version}",latest_version_infromation,QMessageBox.Ok,QMessageBox.Cancel)
-            if ret == QMessageBox.Ok:
-                QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager/releases"))
-        elif flag == 1:
-            QMessageBox.information(self,QCoreApplication.translate("MessageBox","当前已是最新版本",None),latest_version_infromation)
+            latest_version = response_latest_version['tag_name'].split("v")[1]
+            if self.config['language'] == "en":
+                response_update_log= requests.get(url_en).text
+            else:
+                response_update_log= requests.get(url_cn_zh).text
+            try:
+                latest_version = response_latest_version['tag_name'].split("v")[1]
+            except:
+                QMessageBox.warning(self,self.version,response_latest_version['message'])
+            pattern = re.compile(r'## V(.*?) ')
+            versions = pattern.findall(response_update_log)
+            log_latest_version = max(versions)
 
+            log_start = response_update_log.index(f'## V{log_latest_version}')
+            try:
+                log_end = response_update_log.index(f'## V', log_start+1)
+            except:
+                log_end = len(response_update_log)
+            latest_version_infromation = response_update_log[log_start:len(response_update_log)]
+            if not self.config['ignore_version'] == latest_version:
+                if latest_version > self.version:
+                    ret = QMessageBox.question(self,f"V{latest_version}",latest_version_infromation,QMessageBox.Ok | QMessageBox.Ignore | QMessageBox.Cancel)
+                    if ret == QMessageBox.Ok:
+                        QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager/releases"))
+                    if ret == QMessageBox.Ignore:
+                        with open("config.json","w") as cf:
+                            self.config['ignore_version'] = latest_version
+                            json.dump(self.config,cf)
+                elif flag == 1:
+                    QMessageBox.information(self,QCoreApplication.translate("MessageBox","当前已是最新版本",None),latest_version_infromation)
+            else:
+                if flag == 1:
+                    QMessageBox.information(self,QCoreApplication.translate("MessageBox","当前已是最新版本",None),latest_version_infromation)
+        except:
+            QMessageBox.warning(self,self.version,response_latest_version['message'])
 
     #删除卡组
     def delet_set(self):

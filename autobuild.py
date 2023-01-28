@@ -76,22 +76,14 @@ def package_python_program():
     subprocess.run(["powershell", "nuitka", nuitka_options, "decksmanager.py"])
     try:
         if args.releases:
-            shutil.copy(os.path.join(os.getcwd(),"update.exe"),os.path.join(os.getcwd(),"build","releases"))
             shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build","releases","language"))
         else:
-            shutil.copy(os.path.join(os.getcwd(),"update.exe"),os.path.join(os.getcwd(),"build",args.version_code))
             shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build",args.version_code,"language"))
     except:
         pass
 
     save_version_info(output_file, args.version_code, args.update_code)
     save_version_info(os.path.dirname(output_file), args.version_code, args.update_code)
-    # if args.releases:
-    #     shutil.copy(os.path.join(os.getcwd(),"update.exe"),os.path.join(os.getcwd(),"build","releases"))
-    #     shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build","releases","language"))
-    # else:
-    #     shutil.copy(os.path.join(os.getcwd(),"update.exe"),os.path.join(os.getcwd(),"build",args.version_code))
-    #     shutil.copytree(os.path.join(os.getcwd(),"language"),os.path.join(os.getcwd(),"build",args.version_code,"language"))
 
 if __name__ == '__main__':
     package_python_program()
