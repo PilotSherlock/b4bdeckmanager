@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(739, 616)
         icon = QIcon()
-        icon.addFile(u"F:/Users/kebiq/.designer/backup/ico.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../icon/icon.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.action = QAction(MainWindow)
         self.action.setObjectName(u"action")

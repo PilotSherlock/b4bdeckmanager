@@ -63,10 +63,10 @@ def package_python_program():
         if not args.update_code:
             parser.error("The update_code parameter is required")
     if args.releases:
-        nuitka_options = f"--standalone --windows-icon-from-ico=ico.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build/releases/ --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " +args.other
+        nuitka_options = f"--standalone --windows-icon-from-ico=icon/icon.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build/releases/ --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " +args.other
         output_file = os.path.join("build","releases","decksmanager.dist")
     else:
-        nuitka_options = f"--standalone --windows-icon-from-ico=ico.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build\{args.version_code} --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " + args.other
+        nuitka_options = f"--standalone --windows-icon-from-ico=icon/icon.ico --show-memory --show-progress --nofollow-imports --plugin-enable=pyside6 --output-dir=build\{args.version_code} --windows-file-version={args.version_code} --mingw64 --follow-import-to=src" + " " + args.other
         output_file = os.path.join("build",args.version_code,"decksmanager.dist")
     if not args.debug:
         nuitka_options += " --windows-disable-console"

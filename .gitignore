@@ -7,4 +7,4 @@ PaddleOCR-json.zip
 /version
 *.ts
 test.py
-update_test.py
+update.py

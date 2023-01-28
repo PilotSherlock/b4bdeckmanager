@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>分享卡组</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon/icon.ico</normaloff>../icon/icon.ico</iconset>
+  </property>
   <widget class="QTextEdit" name="textEdit_author">
    <property name="geometry">
     <rect>

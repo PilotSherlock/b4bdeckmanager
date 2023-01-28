@@ -15,27 +15,16 @@ from src.cards import CardsSet
 from src.screenshot import ScreenShotsWin
 from src.importingame import AutoImport
 from src.paddleocr import Ocr
-from src.update import update,check_update,restart,ignore_version,download_file
 from src.recommenddeck import RecommendDeck
 
 TRANSLATOR = QTranslator()
-#update_thread
-class Update_thread(QObject):
-    finished = Signal()
-
-    @Slot()
-    def update(self):
-        new,local,remote = check_update(os.getcwd())
-        update(os.getcwd(),local,remote)
-        print("update done!")
-        self.finished.emit()
 
 class CardsManager(QMainWindow):
     #信号 向推荐卡组的子窗口传参tuple(卡组名字,[卡组])/signal
     signal_current_deck = Signal(tuple)
     def __init__(self,app):
         super().__init__()
-        self.version = "1.0.1.1"
+        self.version = "0.0.0.1"
         self.app=app
         self.cards = CardsSet()
         self.ui = ui_decksmanager.Ui_MainWindow()
@@ -54,7 +43,8 @@ class CardsManager(QMainWindow):
             ret = msg_new_version_file.exec()
             if ret == QMessageBox.Ok:
                 restart()
-                self.app.exit()
+                sys.exit(0)
+
         #检测本地是否有更新器/check is exist update.exe
         if not os.path.isfile("update.exe"):
             download_file("https://github.com/PilotSherlock/b4bdeckmanager/raw/test/update.exe",os.path.join(os.getcwd(),"update.exe"))
@@ -92,7 +82,7 @@ class CardsManager(QMainWindow):
         self.ui.pushButton_deletCard.clicked.connect(self.delet_card)
         #生成分享码/share by str
         self.ui.pushButton_shareCode.clicked.connect(self.share)
-        #分享码导入/import by strcheck_update
+        #分享码导入/import by str
         self.ui.pushButton_codeImport.clicked.connect(self.importByshare)
         #截图导入/import by ovr
         self.ui.pushButton_ocrImport.clicked.connect(self.screenshot)
@@ -180,12 +170,22 @@ class CardsManager(QMainWindow):
         QMessageBox.information(self,QCoreApplication.translate("MessageBox","版本信息",None),self.version)
 
     #检查是否有新版本/check_update
-    def main_check_update(self):
-        new,local,remote = check_update(os.getcwd())
+    def check_update(self):
+        response_latest_version = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
+        response_update_log_cn_zh = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
+        lates_version = response['tag_nam'].split("v")[1]
+        if lates_version > self.version:
+            msg_check_update = QMessageBox()
+            msg_check_update.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
         if new is True:
             msg_check_update = QMessageBox()
             msg_check_update.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
-            msg_check_update.setText(QCoreApplication.translate("MessageBox","检测到新版本",None))
+            updatelog = """增加了英语界面（但是相关功能暂未优化），还不能使用OCR功能
+更改了更新方式，不再支持一键更新，仅能通过到github下载最新版本进行更新
+增加了推荐卡组功能，可以选择本地卡组进行推荐，审核通过后加到推荐卡组里
+推荐卡组列表详情添加了”难度“
+修改了软件的版本号 0.0.1.0 -> 0.1.0"""
+            msg_check_update.setText(QCoreApplication.translate("MessageBox",updatelog,None))
             msg_check_update.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","更新",None))
             msg_check_update.addButton(QMessageBox.Ignore).setText(QCoreApplication.translate("MessageBox","忽略此版本",None))
             msg_check_update.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
