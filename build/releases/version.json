@@ -1,1 +1,1 @@
-{"version": "0.2.0", "code": "1", "file": [{"file": "decksmanager.exe", "md5": "e7e3bb15252e9156fa35fb1b0e219572", "name": "decksmanager.exe"}, {"file": "language\\en.qm", "md5": "01e27424490d9575be9ee1b5a1f80a40", "name": "en.qm"}]}
+{"version": "0.2.0", "code": "1", "file": [{"file": "decksmanager.exe", "md5": "6fb76c344da20107085f6dc61bbbc2d4", "name": "decksmanager.exe"}, {"file": "version.json", "md5": "28fde70d785b1c7484911065f93b2ed7", "name": "version.json"}, {"file": "language\\en.qm", "md5": "01e27424490d9575be9ee1b5a1f80a40", "name": "en.qm"}]}
