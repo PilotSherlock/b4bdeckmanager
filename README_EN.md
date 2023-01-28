@@ -31,7 +31,7 @@
 >>> + **--other [nuitka's other arguments, eg: --onefile]**
 
 > # Support
->**Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
+> **Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
 
 > # Update Log
 > ## V0.2.0 (2023/1/28)
