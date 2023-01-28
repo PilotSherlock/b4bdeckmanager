@@ -1,4 +1,4 @@
-**简体中文| [English](./README_EN.md) **
+** 简体中文| [English](./README_EN.md) **
 # 喋血复仇卡组管理工具
 > # 导入方式:
 > ## 1：字典字符串导入
@@ -6,16 +6,17 @@
 > ## 2：通过OCR识别卡组导入
 >> **OCR功能需要使用到PaddleOCR-json模块，请先下载PaddleOCR-json.zip到decksmanager.exe下**  
 >> **或者下载包含PaddleOCR-json的zip**  
-[下载带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_OCR.zip)  
-[下载不带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_withoutOCR.zip)  
+[下载带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.2.0/b4bdeckmanager_v0.2.0_OCR.zip)  
+[下载不带OCR版本](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.2.0/b4bdeckmanager_v0.2.0_withoutOCR.zip)  
 [下载PaddleOCR-json.zip](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/PaddleOCR-json/PaddleOCR-json.zip)  
 [PaddleOCR-json库](https://github.com/hiroi-sora/PaddleOCR-json)
 > ## 3: 导入卡组到游戏
 >> **支持一键导入游戏**
 >> **目前仅仅支持16:9分辨率且小于等于1920*1080**  
 >> **导入游戏前请把分辨率改为16:9 小于1920*1080 窗口化/无边框**
->> ![image](https://user-images.githubusercontent.com/42969918/214327184-a39095af-cccf-459c-ac59-7c6950c33c1c.png)
->> ![image](https://user-images.githubusercontent.com/42969918/214327251-daee32e8-3eac-4d98-a356-ced47280c5c8.png)
+>> ![image](https://user-images.githubusercontent.com/42969918/215276860-5bef2ec4-03da-4ae0-b9b2-7f269808e507.png)
+>> ![image](https://user-images.githubusercontent.com/42969918/215276867-57217061-6b07-42df-a31b-3d2b4510730f.png)
+
 
 > # 打包
 > **此软件使用nuitka打包**
