@@ -158,8 +158,8 @@ class CardsManager(QMainWindow):
 
     #检查是否有新版本/check_update
     def check_update(self,flag):
-        url_cn_zh ="https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_cn_zh.md"
-        url_en = "https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_en.md"
+        url_cn_zh ="https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/master/UpdateLog/update_log_cn_zh.md"
+        url_en = "https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/master/UpdateLog/update_log_en.md"
         response_latest_version = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
         try:
             latest_version = response_latest_version['tag_name'].split("v")[1]
