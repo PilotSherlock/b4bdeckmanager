@@ -8,3 +8,4 @@ PaddleOCR-json.zip
 *.ts
 test.py
 update.py
+/admin

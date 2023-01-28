@@ -31,11 +31,10 @@
 >>> + **--other [nuitka's other arguments, eg: --onefile]**
 
 > # Support
->> **Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
+> **Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
 
 > # Update Log
 > ## V0.2.0 (2023/1/28)
-
 >* Added English interface (but related functions are not optimized yet), can't use OCR function yet
 >* Changed the update method, no longer support one-click update, only can update by downloading the latest version from github.
 >* Added recommend deck function, you can select local deck for recommendation, and add it to the recommended deck after approval.

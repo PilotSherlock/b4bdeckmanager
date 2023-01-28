@@ -366,6 +366,8 @@ class Window_push_deck(QDialog):
     def push(self):
         rezult = {}
         rezult["name"] = self.deck[0]
+        with open("config.json","r") as cf:
+            self.config = json.load(cf)
         if not self.ui.textEdit_author.toPlainText() == "" and not self.ui.textEdit_deck_info.toPlainText() == "" and not self.ui.textEdit_game_version.toPlainText() == "":
             rezult["data"] = {"deck":self.deck[1],"author":self.ui.textEdit_author.toPlainText(),"info":self.ui.textEdit_deck_info.toPlainText(),"version":self.ui.textEdit_game_version.toPlainText(),"difficulty":self.ui.comboBox_difficulty.currentText(),"language":self.config['language']}
             respons = requests.post("https://sherlock117.com:8001/share",data=json.dumps(rezult)).json()
