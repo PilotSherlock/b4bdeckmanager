@@ -1,4 +1,4 @@
-** 简体中文| [English](./README_EN.md) **
+**简体中文| [English](./README_EN.md)**
 # 喋血复仇卡组管理工具
 > # 导入方式:
 > ## 1：字典字符串导入
