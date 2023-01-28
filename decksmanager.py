@@ -2,6 +2,7 @@ import sys
 import json
 import os
 import shutil
+import re
 
 import requests
 from PySide6.QtWidgets import QMainWindow,QMessageBox,QInputDialog,QApplication,QDialog
@@ -24,7 +25,8 @@ class CardsManager(QMainWindow):
     signal_current_deck = Signal(tuple)
     def __init__(self,app):
         super().__init__()
-        self.version = "0.0.0.1"
+        self.version = "0.2.0"
+
         self.app=app
         self.cards = CardsSet()
         self.ui = ui_decksmanager.Ui_MainWindow()
@@ -33,21 +35,6 @@ class CardsManager(QMainWindow):
         self.recommendCards = RecommendDeck().get_recommend_deck(self.config['language'])
         #子窗口/subwindows
         self.subwindow_push_deck = Window_push_deck()
-        #如果有下载好的本地更新文件寻求重启更新/if there is a update file in local,ask if restart to update
-        if os.path.isdir("update_cache"):
-            msg_new_version_file = QMessageBox()
-            msg_new_version_file.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
-            msg_new_version_file.setText(QCoreApplication.translate("MessageBox","本地有下载完成的新版本,确认重启软件进行更新",None))
-            msg_new_version_file.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","确定",None))
-            msg_new_version_file.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
-            ret = msg_new_version_file.exec()
-            if ret == QMessageBox.Ok:
-                restart()
-                sys.exit(0)
-
-        #检测本地是否有更新器/check is exist update.exe
-        if not os.path.isfile("update.exe"):
-            download_file("https://github.com/PilotSherlock/b4bdeckmanager/raw/test/update.exe",os.path.join(os.getcwd(),"update.exe"))
 
         #语言选择/select language
         self.languageActionGroup = QActionGroup(self.ui.menu_3)
@@ -57,7 +44,7 @@ class CardsManager(QMainWindow):
         self.languageActionGroup.triggered[QAction].connect(self.update_recommend_deck_without_messagebox)
         #启动检查更新/check update
         try:
-            self.main_check_update()
+            self.check_update()
         except:
             pass
         #初始化数据/init data
@@ -65,7 +52,7 @@ class CardsManager(QMainWindow):
         #------菜单-----menu---------
         self.ui.action_info.triggered.connect(self.get_version_info)
         self.ui.actionGithub.triggered.connect(lambda: QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager")))
-        self.ui.actioncheck.triggered.connect(self.menu_check_update)
+        self.ui.actioncheck.triggered.connect(lambda:self.check_update(1))
         self.ui.actioncheckDeck.triggered.connect(self.update_recommend_deck)
         #选择卡组/select deck
         self.ui.listWidget_cardSet.itemSelectionChanged.connect(self.update_listWidget_cards)
@@ -170,56 +157,32 @@ class CardsManager(QMainWindow):
         QMessageBox.information(self,QCoreApplication.translate("MessageBox","版本信息",None),self.version)
 
     #检查是否有新版本/check_update
-    def check_update(self):
+    def check_update(self,flag):
+        url_cn_zh ="https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_cn_zh.md"
+        url_en = "https://raw.githubusercontent.com/PilotSherlock/b4bdeckmanager/test/UpdateLog/update_log_en.md"
         response_latest_version = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
-        response_update_log_cn_zh = requests.get("https://api.github.com/repos/PilotSherlock/b4bdeckmanager/releases/latest").json()
-        lates_version = response['tag_nam'].split("v")[1]
-        if lates_version > self.version:
-            msg_check_update = QMessageBox()
-            msg_check_update.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
-        if new is True:
-            msg_check_update = QMessageBox()
-            msg_check_update.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
-            updatelog = """增加了英语界面（但是相关功能暂未优化），还不能使用OCR功能
-更改了更新方式，不再支持一键更新，仅能通过到github下载最新版本进行更新
-增加了推荐卡组功能，可以选择本地卡组进行推荐，审核通过后加到推荐卡组里
-推荐卡组列表详情添加了”难度“
-修改了软件的版本号 0.0.1.0 -> 0.1.0"""
-            msg_check_update.setText(QCoreApplication.translate("MessageBox",updatelog,None))
-            msg_check_update.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","更新",None))
-            msg_check_update.addButton(QMessageBox.Ignore).setText(QCoreApplication.translate("MessageBox","忽略此版本",None))
-            msg_check_update.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
-            ret = msg_check_update.exec()
-            if ret == QMessageBox.Ok:
-                self.thread = QThread()
-                self.worker = Update_thread()
-                self.worker.moveToThread(self.thread)
-                self.worker.finished.connect(self.thread.quit)
-                self.worker.finished.connect(self.update_and_restar)
-                self.thread.started.connect(self.worker.update)
-                self.thread.start()
-            elif ret == QMessageBox.Ignore:
-                ignore_version(os.getcwd(),local,remote)
-            else:
-                return True
-            # new,local,remote = check_update(os.getcwd())
-        elif new is False:
-            return False
+        if self.config['language'] == "en":
+            response_update_log= requests.get(url_en).text
+        else:
+            response_update_log= requests.get(url_cn_zh).text
+        latest_version = response_latest_version['tag_name'].split("v")[1]
+        pattern = re.compile(r'## V(.*?) ')
+        versions = pattern.findall(response_update_log)
+        log_latest_version = max(versions)
 
-    def menu_check_update(self):
-        if not self.main_check_update():
-            QMessageBox.information(self,QCoreApplication.translate("MessageBox","更新",None),QCoreApplication.translate("MessageBox","当前已是最新版本",None))
-    #更新软件重启/upgrade then restart new version
-    def update_and_restar(self):
-        msg_restart = QMessageBox()
-        msg_restart.setWindowTitle(QCoreApplication.translate("MessageBox","更新",None))
-        msg_restart.setText(QCoreApplication.translate("MessageBox","新版本下载完成,软件将重启更新",None))
-        msg_restart.addButton(QMessageBox.Ok).setText(QCoreApplication.translate("MessageBox","确定",None))
-        msg_restart.addButton(QMessageBox.Cancel).setText(QCoreApplication.translate("MessageBox","取消",None))
-        ret = msg_restart.exec()
-        if ret == QMessageBox.Ok:
-            restart()
-            self.app.exit()
+        log_start = response_update_log.index(f'## V{log_latest_version}')
+        try:
+            log_end = response_update_log.index(f'## V', log_start+1)
+        except:
+            log_end = len(response_update_log)
+        latest_version_infromation = response_update_log[log_start:len(response_update_log)]
+        if latest_version > self.version:
+            ret = QMessageBox.information(self,f"V{latest_version}",latest_version_infromation,QMessageBox.Ok,QMessageBox.Cancel)
+            if ret == QMessageBox.Ok:
+                QDesktopServices.openUrl(QUrl("https://github.com/PilotSherlock/b4bdeckmanager/releases"))
+        elif flag == 1:
+            QMessageBox.information(self,QCoreApplication.translate("MessageBox","当前已是最新版本",None),latest_version_infromation)
+
 
     #删除卡组
     def delet_set(self):
