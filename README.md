@@ -29,11 +29,10 @@
 >>> + **--other         [nuitka的其他参数，eg: --onefile]**
 
 > # 支持
->> **使用了[hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
+> **使用了[hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
 
 > # 更新日志
 > ## V0.2.0 (2023/1/28)
-
 > * 增加了英语界面（但是相关功能暂未优化），还不能使用OCR功能
 > * 更改了更新方式，不再支持一键更新，仅能通过到github下载最新版本进行更新
 > * 增加了推荐卡组功能，可以选择本地卡组进行推荐，审核通过后加到推荐卡组里

@@ -8,14 +8,16 @@
 > ## 2: Deck import by OCR
 >> **OCR function need to use to PaddleOCR-json module, please download PaddleOCR-json.zip to decksmanager.exe folder first**  
 >> **or download a zip containing PaddleOCR-json**  
-[Download version with OCR](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_OCR.zip)  
-[Download version without OCR](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.0.1.1/b4bdeckmanager_v0.0.1.1_withoutOCR.zip)  
+[Download version with OCR](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.2.0/b4bdeckmanager_v0.2.0_OCR.zip)  
+[Download version without OCR](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/DeckManager_v0.2.0/b4bdeckmanager_v0.2.0_withoutOCR.zip)  
 [Download PaddleOCR-json.zip](https://github.com/PilotSherlock/b4bdeckmanager/releases/download/PaddleOCR-json/PaddleOCR-json.zip)  
 [PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)
 > ## 3: Importing the deck into the game  
 >> **Support one-click game import**  
 >> **Currently only supports 16:9 resolution and less than or equal to 1920*1080**  
 >> **Please change the resolution to 16:9 and less than 1920*1080 before importing the game Windowed/Borderless**  
+> ![image](https://user-images.githubusercontent.com/42969918/215277047-796341dd-58b0-4521-a865-9b36921bc621.png)
+>![image](https://user-images.githubusercontent.com/42969918/215277055-516b4812-50c4-4de5-a002-5ffef57e1cb0.png)
 
 > # Build  
 > **This software is build using nuitka**
@@ -29,11 +31,10 @@
 >>> + **--other [nuitka's other arguments, eg: --onefile]**
 
 > # Support
->> **Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
+>**Used [hiroi-sora/PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)**
 
 > # Update Log
 > ## V0.2.0 (2023/1/28)
-
 >* Added English interface (but related functions are not optimized yet), can't use OCR function yet
 >* Changed the update method, no longer support one-click update, only can update by downloading the latest version from github.
 >* Added recommend deck function, you can select local deck for recommendation, and add it to the recommended deck after approval.
